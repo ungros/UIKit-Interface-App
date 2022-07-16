@@ -22,10 +22,13 @@ enum Resources {
 enum Strings {
     
     enum TabBar{
-        static var overview = "Overview"
-        static var session = "Session"
-        static var progress = "Progress"
-        static var settings = "Settings"
+        static let overview = "Overview"
+        static let session = "Session"
+        static let progress = "Progress"
+        static let settings = "Settings"
+    }
+    enum NavBar{
+        static let overview =
     }
 }
 
