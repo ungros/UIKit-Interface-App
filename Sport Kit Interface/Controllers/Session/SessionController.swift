@@ -21,7 +21,7 @@ class SessionController: BaseController {
     
     }
     override func navBarLeftButtonHandler() {
-        print("Session nav bar left button tapped")
+        print("Session nav bar left button taped")
     }
 
 }
