@@ -9,13 +9,15 @@ import UIKit
 
 class OverviewController: BaseController {
 
+   private let allWorkoutsButton = SecondaryButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
         
         
     }
-
-
 }
+
+
 

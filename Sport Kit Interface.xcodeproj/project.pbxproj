@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		304B926E2883F2C4003A542D /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B926D2883F2C4003A542D /* SecondaryButton.swift */; };
 		305B4C37287B4A1B00B6A6F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B4C36287B4A1B00B6A6F1 /* AppDelegate.swift */; };
 		305B4C39287B4A1B00B6A6F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B4C38287B4A1B00B6A6F1 /* SceneDelegate.swift */; };
 		305B4C3B287B4A1B00B6A6F1 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B4C3A287B4A1B00B6A6F1 /* OverviewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		304B926D2883F2C4003A542D /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		305B4C33287B4A1B00B6A6F1 /* Sport Kit Interface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sport Kit Interface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		305B4C36287B4A1B00B6A6F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		305B4C38287B4A1B00B6A6F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		304B926C2883F299003A542D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				304B926D2883F2C4003A542D /* SecondaryButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		305B4C2A287B4A1B00B6A6F1 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				305B4C3A287B4A1B00B6A6F1 /* OverviewController.swift */,
+				304B926C2883F299003A542D /* Views */,
 			);
 			path = Overview;
 			sourceTree = "<group>";
@@ -239,6 +250,7 @@
 				305B4C51287C2BB700B6A6F1 /* TabBarController.swift in Sources */,
 				30BF946E28829739006F2C47 /* NavBarController.swift in Sources */,
 				307C93602882BCE00066DAF1 /* SessionController.swift in Sources */,
+				304B926E2883F2C4003A542D /* SecondaryButton.swift in Sources */,
 				307C93622882BD030066DAF1 /* ProgressController.swift in Sources */,
 				305B4C37287B4A1B00B6A6F1 /* AppDelegate.swift in Sources */,
 				305B4C39287B4A1B00B6A6F1 /* SceneDelegate.swift in Sources */,
