@@ -33,6 +33,9 @@ enum Strings {
         static let progress = "Workout Progress"
         static let session = "High Intencity Cardio"
     }
+    enum Overview {
+        static let allWorcoutsButton = "All Workouts"
+    }
 }
 
 enum Images {
@@ -43,6 +46,7 @@ enum Images {
     static var settings = UIImage(named: "settings_tab")
  }
     enum Common {
+    static let downArrow = UIImage(named: "all_workouts")
         
     }
 }

@@ -24,6 +24,10 @@ final class SecondaryButton: UIButton {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    func setTitle(_ title: String) {
+        lable.text = title
+    }
 }
 
 
@@ -49,6 +53,9 @@ private extension SecondaryButton {
     
     func configure(){
         
+        
+        makeSystem(self)
+        
         backgroundColor = Resources.Colors.secondary
         layer.cornerRadius = 14
         
@@ -59,7 +66,7 @@ private extension SecondaryButton {
         
         
         iconView.translatesAutoresizingMaskIntoConstraints = false
-        iconView.image = UIImage(systemName: "checkmark.seal.fill")?.withRenderingMode(.alwaysTemplate)
+        iconView.image = Resources.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
         iconView.tintColor = Resources.Colors.active
       
     }
