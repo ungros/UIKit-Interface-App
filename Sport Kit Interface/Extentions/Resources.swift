@@ -28,7 +28,9 @@ enum Strings {
         static let settings = "Settings"
     }
     enum NavBar{
-        static let overview =
+        static let settings = "Settings"
+        static let progress = "Workout Progress"
+        static let session = "High Intencity Cardio"
     }
 }
 
