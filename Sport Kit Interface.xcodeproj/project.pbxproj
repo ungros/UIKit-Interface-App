@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		301274FD2885A72C00AF2521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301274FC2885A72C00AF2521 /* Assets.xcassets */; };
 		304B926E2883F2C4003A542D /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B926D2883F2C4003A542D /* SecondaryButton.swift */; };
+		304B92702885762D003A542D /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B926F2885762D003A542D /* OverviewNavBar.swift */; };
+		304B927228857673003A542D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B927128857673003A542D /* BaseView.swift */; };
 		305B4C37287B4A1B00B6A6F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B4C36287B4A1B00B6A6F1 /* AppDelegate.swift */; };
 		305B4C39287B4A1B00B6A6F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B4C38287B4A1B00B6A6F1 /* SceneDelegate.swift */; };
 		305B4C3B287B4A1B00B6A6F1 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B4C3A287B4A1B00B6A6F1 /* OverviewController.swift */; };
-		305B4C40287B4A1E00B6A6F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305B4C3F287B4A1E00B6A6F1 /* Assets.xcassets */; };
 		305B4C43287B4A1E00B6A6F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 305B4C41287B4A1E00B6A6F1 /* LaunchScreen.storyboard */; };
 		305B4C51287C2BB700B6A6F1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B4C50287C2BB700B6A6F1 /* TabBarController.swift */; };
 		305B4C54287C2E6900B6A6F1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B4C53287C2E6900B6A6F1 /* UIColor.swift */; };
@@ -25,12 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		301274FC2885A72C00AF2521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		304B926D2883F2C4003A542D /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		304B926F2885762D003A542D /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
+		304B927128857673003A542D /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		305B4C33287B4A1B00B6A6F1 /* Sport Kit Interface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sport Kit Interface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		305B4C36287B4A1B00B6A6F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		305B4C38287B4A1B00B6A6F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		305B4C3A287B4A1B00B6A6F1 /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
-		305B4C3F287B4A1E00B6A6F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		305B4C42287B4A1E00B6A6F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		305B4C44287B4A1E00B6A6F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		305B4C50287C2BB700B6A6F1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				304B926D2883F2C4003A542D /* SecondaryButton.swift */,
+				304B926F2885762D003A542D /* OverviewNavBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 				305B4C52287C2E3C00B6A6F1 /* Extentions */,
 				305B4C4C287B4F6000B6A6F1 /* Application */,
 				307C93552882A3210066DAF1 /* Controllers */,
+				307C935A2882BC7A0066DAF1 /* Base */,
 				305B4C4D287B555A00B6A6F1 /* Supporting Files */,
 			);
 			path = "Sport Kit Interface";
@@ -102,9 +108,9 @@
 		305B4C4D287B555A00B6A6F1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				305B4C3F287B4A1E00B6A6F1 /* Assets.xcassets */,
 				305B4C41287B4A1E00B6A6F1 /* LaunchScreen.storyboard */,
 				305B4C44287B4A1E00B6A6F1 /* Info.plist */,
+				301274FC2885A72C00AF2521 /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -126,7 +132,6 @@
 				307C935D2882BCB60066DAF1 /* Progress */,
 				307C935C2882BCAA0066DAF1 /* Session */,
 				307C935B2882BC9D0066DAF1 /* Overview */,
-				307C935A2882BC7A0066DAF1 /* Base */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 				305B4C50287C2BB700B6A6F1 /* TabBarController.swift */,
 				30BF946D28829739006F2C47 /* NavBarController.swift */,
 				307C93562882A3430066DAF1 /* BaseController.swift */,
+				304B927128857673003A542D /* BaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -232,8 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301274FD2885A72C00AF2521 /* Assets.xcassets in Resources */,
 				305B4C43287B4A1E00B6A6F1 /* LaunchScreen.storyboard in Resources */,
-				305B4C40287B4A1E00B6A6F1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +252,7 @@
 			files = (
 				307C93642882BD110066DAF1 /* SettingsController.swift in Sources */,
 				305B4C3B287B4A1B00B6A6F1 /* OverviewController.swift in Sources */,
+				304B92702885762D003A542D /* OverviewNavBar.swift in Sources */,
 				305B4C56287C2FC200B6A6F1 /* Resources.swift in Sources */,
 				305B4C51287C2BB700B6A6F1 /* TabBarController.swift in Sources */,
 				30BF946E28829739006F2C47 /* NavBarController.swift in Sources */,
@@ -255,6 +262,7 @@
 				305B4C37287B4A1B00B6A6F1 /* AppDelegate.swift in Sources */,
 				305B4C39287B4A1B00B6A6F1 /* SceneDelegate.swift in Sources */,
 				307C93572882A3430066DAF1 /* BaseController.swift in Sources */,
+				304B927228857673003A542D /* BaseView.swift in Sources */,
 				307C93592882AFD50066DAF1 /* UIView.swift in Sources */,
 				305B4C54287C2E6900B6A6F1 /* UIColor.swift in Sources */,
 			);

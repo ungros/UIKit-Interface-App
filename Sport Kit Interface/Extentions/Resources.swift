@@ -20,38 +20,39 @@ enum Resources {
         static var titleGrey = UIColor(hexString: "545C77")
     }
 
-enum Strings {
+    enum Strings {
     
-    enum TabBar{
+        enum TabBar{
         static let overview = "Overview"
         static let session = "Session"
         static let progress = "Progress"
         static let settings = "Settings"
     }
-    enum NavBar{
+        enum NavBar{
         static let settings = "Settings"
         static let progress = "Workout Progress"
         static let session = "High Intencity Cardio"
     }
-    enum Overview {
+        enum Overview {
         static let allWorcoutsButton = "All Workouts"
+        static let navBarLable = "Today"
     }
 }
 
-enum Images {
-    enum TabBar {
+    enum Images {
+        enum TabBar {
     static var overview = UIImage(named: "overview_tab")
     static var session = UIImage(named: "session_tab")
     static var progress = UIImage(named: "progress_tab")
     static var settings = UIImage(named: "settings_tab")
  }
-    enum Common {
+        enum Common {
     static let downArrow = UIImage(named: "all_workouts")
-        
+    static let add = UIImage(named: "add_icon")
     }
 }
     
-enum Fonts {
+    enum Fonts {
     static func helveticaRegular(with size: CGFloat) -> UIFont {
         UIFont(name: "Helvetica", size: size) ?? UIFont()
         }
