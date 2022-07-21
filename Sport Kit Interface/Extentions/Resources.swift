@@ -52,7 +52,7 @@ enum R {
             static let navBarLeft = "Export"
             static let navBarRight = "Details"
         }
-
+//xxx
         enum Settings {}
     }
 
