@@ -55,15 +55,15 @@ private extension SecondaryButton {
         
         makeSystem(self)
         
-        backgroundColor = Resources.Colors.secondary
+        backgroundColor = R.Colors.secondary
         layer.cornerRadius = 14
           
-        lable.textColor = Resources.Colors.active
+        lable.textColor = R.Colors.active
         lable.textAlignment = .center
-        lable.font = Resources.Fonts.helveticaRegular(with: 15)
+        lable.font = R.Fonts.helvelticaRegular(with: 15)
         
-    iconView.image = Resources.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
-        iconView.tintColor = Resources.Colors.active
+    iconView.image = R.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
+        iconView.tintColor = R.Colors.active
       
     }
 }

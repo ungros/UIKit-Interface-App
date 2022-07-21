@@ -12,9 +12,9 @@ class BaseView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
     
-        addViews()
-        layoutViews()
-        configureViews()
+        setupViews()
+        constrainViews()
+        configureAppearance()
     }
     
     required init?(coder: NSCoder) {
@@ -24,8 +24,10 @@ class BaseView: UIView {
 
 @objc extension BaseView {
     
-    func addViews(){}
-    func layoutViews(){}
-    func configureViews(){}
+    func setupViews(){}
+    func constrainViews(){}
+    func configureAppearance(){
+    backgroundColor = .white
+    }
     
 }

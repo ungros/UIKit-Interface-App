@@ -104,9 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				305B4C52287C2E3C00B6A6F1 /* Extentions */,
-				305B4C4C287B4F6000B6A6F1 /* Application */,
 				307C93552882A3210066DAF1 /* Controllers */,
 				307C935A2882BC7A0066DAF1 /* Base */,
+				305B4C4C287B4F6000B6A6F1 /* Application */,
 				305B4C4D287B555A00B6A6F1 /* Supporting Files */,
 			);
 			path = "Sport Kit Interface";

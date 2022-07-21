@@ -13,9 +13,8 @@ class SessionController: BaseController {
         super.viewDidLoad()
     
         
-        title = Resources.Strings.NavBar.session
-        navigationController?.tabBarItem.title = Resources.Strings.TabBar.session
-   
+        title = R.Strings.NavBar.session
+        navigationController?.tabBarItem.title = R.Strings.NavBar.session
         addNavBarButton(at: .Left, with: "Pause")
         addNavBarButton(at: .Right, with: "Finish")
     

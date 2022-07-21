@@ -10,7 +10,14 @@ import UIKit
 
 final class OverviewNavBar: BaseView {
     
-    private let titleLable = UILabel()
+    private let titleLable: UILabel = {
+        let lable = UILabel()
+        lable.text = R.Strings.NavBar.overview
+        lable.textColor = R.Colors.titleGray
+        lable.font = R.Fonts.helvelticaRegular(with: 22)
+        return lable
+    }()
+    
     private let addButton = UIButton()
     private let allWorkoutsButton = SecondaryButton()
     
@@ -21,7 +28,7 @@ final class OverviewNavBar: BaseView {
         super.layoutSubviews()
         
         //Addig for all subviews!
-        addBottomBorder(with: Resources.Colors.separate, height: 1)
+        addBottomBorder(with: R.Colors.separator, height: 1)
     }
     
     func addAllWorkoutsAction(_ action: Selector, with target: Any?) {
@@ -37,8 +44,8 @@ extension OverviewNavBar {
    
     
     
-    override func addViews() {
-        super.addViews()
+    override func setupViews() {
+        super.setupViews()
         
         addView(allWorkoutsButton)
         addView(titleLable)
@@ -47,8 +54,8 @@ extension OverviewNavBar {
         addView(weekView)
     }
    
-    override func layoutViews() {
-        super.layoutViews()
+    override func constrainViews() {
+        super.constrainViews()
         
         NSLayoutConstraint.activate([
             //Верхняя грань
@@ -77,18 +84,18 @@ extension OverviewNavBar {
         ])
     }
    
-    override func configureViews() {
-        super.configureViews()
+    override func configureAppearance() {
+        super.configureAppearance()
      
         backgroundColor = .white
             
-        titleLable.text = Resources.Strings.Overview.navBarLable
-        titleLable.textColor = Resources.Colors.titleGrey
-        titleLable.font = Resources.Fonts.helveticaRegular(with: 22)
+//        titleLable.text = R.Strings.Overview.navBarLable
+//        titleLable.textColor = R.Colors.titleGrey
+//        titleLable.font = R.Fonts.helveticaRegular(with: 22)
         
-        allWorkoutsButton.setTitle(Resources.Strings.Overview.allWorcoutsButton)
+        allWorkoutsButton.setTitle(R.Strings.Overview.allWorcoutsButton)
         
-        addButton.setImage(Resources.Images.Common.add, for: .normal)
+        addButton.setImage(R.Images.Common.add, for: .normal)
         
       
     }
