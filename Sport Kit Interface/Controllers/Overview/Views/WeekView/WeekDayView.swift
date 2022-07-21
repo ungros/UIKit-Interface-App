@@ -71,7 +71,6 @@ extension WeekView {
             
             stackView.spacing = 3
             stackView.axis = .vertical
-            
         }
     }
 
