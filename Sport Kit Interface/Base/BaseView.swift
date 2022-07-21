@@ -14,7 +14,7 @@ class BaseView: UIView {
     
         addViews()
         layoutViews()
-        configure()
+        configureViews()
     }
     
     required init?(coder: NSCoder) {
@@ -26,8 +26,6 @@ class BaseView: UIView {
     
     func addViews(){}
     func layoutViews(){}
-    func configure(){
-        
-    }
+    func configureViews(){}
     
 }

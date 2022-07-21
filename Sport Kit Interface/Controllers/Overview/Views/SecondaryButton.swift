@@ -18,7 +18,7 @@ final class SecondaryButton: UIButton {
         
         addViews()
         layoutViews()
-        configure()
+        configureViews()
     }
     
     required init?(coder: NSCoder) {
@@ -51,7 +51,7 @@ private extension SecondaryButton {
         ])
     }
     
-    func configure(){
+    func configureViews(){
         
         makeSystem(self)
         
