@@ -11,7 +11,7 @@ class SessionController: BaseController {
 
     private let timerView: BaseInfoView = {
         
-        let view = BaseInfoView(with: "Test", aligment: .right)
+        let view = BaseInfoView(with: "Test", buttonTitle: "Test Button")
         return view
     }()
 }
