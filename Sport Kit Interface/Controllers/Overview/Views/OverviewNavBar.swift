@@ -47,11 +47,11 @@ extension OverviewNavBar {
     override func setupViews() {
         super.setupViews()
         
-        addView(allWorkoutsButton)
-        addView(titleLable)
-        addView(addButton)
+        setupView(allWorkoutsButton)
+        setupView(titleLable)
+        setupView(addButton)
         
-        addView(weekView)
+        setupView(weekView)
     }
    
     override func constrainViews() {

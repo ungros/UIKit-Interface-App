@@ -27,6 +27,7 @@
 		30B956F228881948002A4088 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B956F128881948002A4088 /* WeekDayView.swift */; };
 		30BF946E28829739006F2C47 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BF946D28829739006F2C47 /* NavBarController.swift */; };
 		30D8A990288858ED0061D22C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D8A98F288858ED0061D22C /* Date.swift */; };
+		30D8A9942889C5BD0061D22C /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D8A9932889C5BD0061D22C /* BaseInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		30B956F128881948002A4088 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
 		30BF946D28829739006F2C47 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		30D8A98F288858ED0061D22C /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		30D8A9932889C5BD0061D22C /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				305B4C52287C2E3C00B6A6F1 /* Extentions */,
 				307C93552882A3210066DAF1 /* Controllers */,
+				30D8A9912889C52D0061D22C /* Navigation */,
 				307C935A2882BC7A0066DAF1 /* Base */,
 				305B4C4C287B4F6000B6A6F1 /* Application */,
 				305B4C4D287B555A00B6A6F1 /* Supporting Files */,
@@ -156,10 +159,8 @@
 		307C935A2882BC7A0066DAF1 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				305B4C50287C2BB700B6A6F1 /* TabBarController.swift */,
-				30BF946D28829739006F2C47 /* NavBarController.swift */,
+				30D8A9922889C58E0061D22C /* Views */,
 				307C93562882A3430066DAF1 /* BaseController.swift */,
-				304B927128857673003A542D /* BaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -195,6 +196,24 @@
 				307C93632882BD110066DAF1 /* SettingsController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		30D8A9912889C52D0061D22C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				305B4C50287C2BB700B6A6F1 /* TabBarController.swift */,
+				30BF946D28829739006F2C47 /* NavBarController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		30D8A9922889C58E0061D22C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				304B927128857673003A542D /* BaseView.swift */,
+				30D8A9932889C5BD0061D22C /* BaseInfoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +303,7 @@
 				304B927228857673003A542D /* BaseView.swift in Sources */,
 				30B956F228881948002A4088 /* WeekDayView.swift in Sources */,
 				307C93592882AFD50066DAF1 /* UIView.swift in Sources */,
+				30D8A9942889C5BD0061D22C /* BaseInfoView.swift in Sources */,
 				305B4C54287C2E6900B6A6F1 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
