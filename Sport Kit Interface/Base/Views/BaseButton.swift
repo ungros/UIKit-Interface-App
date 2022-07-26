@@ -67,7 +67,7 @@ private extension BaseButton {
 
         NSLayoutConstraint.activate([
             iconView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            iconView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            iconView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -horisontalOffset),
             iconView.heightAnchor.constraint(equalToConstant: 5),
             iconView.widthAnchor.constraint(equalToConstant: 10),
 

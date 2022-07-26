@@ -30,9 +30,11 @@ class TabBarController: UITabBarController {
        
     }
     
+    //Selected TabBar item after loading
     func switchTo(tab: Tabs) {
         selectedIndex = tab.rawValue
     }
+    
     
     private func configureAppearance() {
         tabBar.tintColor = R.Colors.active
