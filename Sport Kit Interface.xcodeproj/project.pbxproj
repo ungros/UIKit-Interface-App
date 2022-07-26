@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		301274FD2885A72C00AF2521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301274FC2885A72C00AF2521 /* Assets.xcassets */; };
 		301274FF2888106900AF2521 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301274FE2888106900AF2521 /* WeekView.swift */; };
-		304B926E2883F2C4003A542D /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B926D2883F2C4003A542D /* SecondaryButton.swift */; };
+		304B926E2883F2C4003A542D /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B926D2883F2C4003A542D /* BaseButton.swift */; };
 		304B92702885762D003A542D /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B926F2885762D003A542D /* OverviewNavBar.swift */; };
 		304B927228857673003A542D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B927128857673003A542D /* BaseView.swift */; };
 		305B4C37287B4A1B00B6A6F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B4C36287B4A1B00B6A6F1 /* AppDelegate.swift */; };
@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		301274FC2885A72C00AF2521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		301274FE2888106900AF2521 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
-		304B926D2883F2C4003A542D /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		304B926D2883F2C4003A542D /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		304B926F2885762D003A542D /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		304B927128857673003A542D /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		305B4C33287B4A1B00B6A6F1 /* Sport Kit Interface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sport Kit Interface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				301275002888107200AF2521 /* WeekView */,
-				304B926D2883F2C4003A542D /* SecondaryButton.swift */,
 				304B926F2885762D003A542D /* OverviewNavBar.swift */,
 			);
 			path = Views;
@@ -210,6 +209,7 @@
 		30D8A9922889C58E0061D22C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				304B926D2883F2C4003A542D /* BaseButton.swift */,
 				304B927128857673003A542D /* BaseView.swift */,
 				30D8A9932889C5BD0061D22C /* BaseInfoView.swift */,
 			);
@@ -295,7 +295,7 @@
 				30BF946E28829739006F2C47 /* NavBarController.swift in Sources */,
 				30D8A990288858ED0061D22C /* Date.swift in Sources */,
 				307C93602882BCE00066DAF1 /* SessionController.swift in Sources */,
-				304B926E2883F2C4003A542D /* SecondaryButton.swift in Sources */,
+				304B926E2883F2C4003A542D /* BaseButton.swift in Sources */,
 				307C93622882BD030066DAF1 /* ProgressController.swift in Sources */,
 				305B4C37287B4A1B00B6A6F1 /* AppDelegate.swift in Sources */,
 				305B4C39287B4A1B00B6A6F1 /* SceneDelegate.swift in Sources */,
