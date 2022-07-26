@@ -12,7 +12,7 @@ public enum WAButtonType {
     case secondary
 }
 
-final class WAButton: UIButton {
+final class BaseButton: UIButton {
 
     private var type: WAButtonType = .primary
 
@@ -50,7 +50,7 @@ final class WAButton: UIButton {
     }
 }
 
-private extension WAButton {
+private extension BaseButton {
 
     func setupViews() {
         setupView(lable)
@@ -67,7 +67,7 @@ private extension WAButton {
 
         NSLayoutConstraint.activate([
             iconView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            iconView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -horisontalOffset),
+            iconView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             iconView.heightAnchor.constraint(equalToConstant: 5),
             iconView.widthAnchor.constraint(equalToConstant: 10),
 

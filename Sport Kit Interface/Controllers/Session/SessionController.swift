@@ -40,7 +40,7 @@ extension SessionController {
         
         
         title = R.Strings.NavBar.session
-        navigationController?.tabBarItem.title = R.Strings.NavBar.session
+        navigationController?.tabBarItem.title = R.Strings.TabBar.title(for: .session)
         addNavBarButton(at: .Left, with: "Pause")
         addNavBarButton(at: .Right, with: "Finish")
         

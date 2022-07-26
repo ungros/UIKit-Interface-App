@@ -19,7 +19,11 @@ final class OverviewNavBar: BaseView {
     }()
     
     private let addButton = UIButton()
-    private let allWorkoutsButton = WAButton(with: .secondary)
+    private let allWorkoutsButton: BaseButton = {
+        let button = BaseButton(with: .secondary)
+        button.setTitle(R.Strings.Overview.allWorcoutsButton)
+        return button
+    }()
     
     private var weekView = WeekView()
     
