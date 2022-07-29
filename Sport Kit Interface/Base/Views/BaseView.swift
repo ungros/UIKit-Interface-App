@@ -13,7 +13,7 @@ class BaseView: UIView {
         super.init(frame: frame)
     
         setupViews()
-        constrainViews()
+        constraintViews()
         configureAppearance()
     }
     
@@ -25,7 +25,7 @@ class BaseView: UIView {
 @objc extension BaseView {
     
     func setupViews(){}
-    func constrainViews(){}
+    func constraintViews(){}
     func configureAppearance(){
     
     }

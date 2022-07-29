@@ -58,8 +58,8 @@ extension OverviewNavBar {
         setupView(weekView)
     }
    
-    override func constrainViews() {
-        super.constrainViews()
+    override func constraintViews() {
+        super.constraintViews()
         
         NSLayoutConstraint.activate([
             //Верхняя грань

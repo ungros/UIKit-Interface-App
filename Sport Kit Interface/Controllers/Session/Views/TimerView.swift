@@ -27,8 +27,8 @@ extension TimerView {
             
             setupView(progressView)
         }
-        override func constrainViews(){
-            super.constrainViews()
+        override func constraintViews(){
+            super.constraintViews()
             
             NSLayoutConstraint.activate([
                 progressView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),

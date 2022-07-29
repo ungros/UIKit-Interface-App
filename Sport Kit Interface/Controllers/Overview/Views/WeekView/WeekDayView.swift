@@ -47,8 +47,8 @@ extension WeekView {
             
         }
 
-        override func constrainViews() {
-            super.constrainViews()
+        override func constraintViews() {
+            super.constraintViews()
             NSLayoutConstraint.activate([
                
                 stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
