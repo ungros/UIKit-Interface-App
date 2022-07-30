@@ -68,6 +68,7 @@ final class TimerView: BaseInfoView {
     private var timerDuration = 0.0
 
     var state: TimerState = .isStopped
+    var callBack: (() -> Void)?
 
     func configure(with duration: Double, progress: Double) {
         timerDuration = duration
@@ -82,6 +83,7 @@ final class TimerView: BaseInfoView {
 
     func startTimer() {
         timer.invalidate()
+  
 
         timer = Timer.scheduledTimer(withTimeInterval: 0.01,
                                      repeats: true,
@@ -92,6 +94,7 @@ final class TimerView: BaseInfoView {
             if self.timerProgress > self.timerDuration {
                 self.timerProgress = self.timerDuration
                 timer.invalidate()
+                self.callBack?()
             }
 
             self.configure(with: self.timerDuration, progress: self.timerProgress)
