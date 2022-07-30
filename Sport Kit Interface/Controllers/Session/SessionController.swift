@@ -7,42 +7,61 @@
 
 import UIKit
 
-class SessionController: BaseController {
+final class SessionController: BaseController {
+    private let timerView = TimerView()
 
-    private let timerView: TimerView = {
-        let view = TimerView()
-        return view
-    }()
+    private let timerDuration = 3.0
+
+    override func navBarLeftButtonHandler() {
+        if timerView.state == .isStopped {
+            timerView.startTimer()
+        } else {
+            timerView.pauseTimer()
+        }
+
+        timerView.state = timerView.state == .isRuning ? .isStopped : .isRuning
+        addNavBarButton(
+            at: .Left,
+            with: timerView.state == .isRuning
+                ? R.Strings.Session.navBarPause : R.Strings.Session.navBarStart
+        )
+    }
+
+    override func navBarRightButtonHanler() {
+        timerView.stopTimer()
+        timerView.state = .isStopped
+
+        addNavBarButton(at: .Left, with: R.Strings.Session.navBarStart)
+    }
 }
 
 extension SessionController {
-   
     override func setupViews() {
         super.setupViews()
-    
-      view.setupView(timerView)
-    }
-    
-    override func constrainViews(){
-        super.constrainViews()
-        
-       NSLayoutConstraint.activate([
-         timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
-            timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
-            timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
-            timerView.heightAnchor.constraint(equalToConstant: 500)
 
+        view.setupView(timerView)
+    }
+
+    override func constaintViews() {
+        super.constaintViews()
+
+        NSLayoutConstraint.activate([
+            timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
+            timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
+            timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15)
         ])
     }
-    override func configureAppearance(){
+
+    override func configureAppearance() {
         super.configureAppearance()
-        
+
         title = R.Strings.NavBar.session
         navigationController?.tabBarItem.title = R.Strings.TabBar.title(for: .session)
-        
-        addNavBarButton(at: .Left, with: R.Strings.Session.navBarLeft)
-        addNavBarButton(at: .Right, with: R.Strings.Session.navBarRight)
-        
+
+        addNavBarButton(at: .Left, with: R.Strings.Session.navBarStart)
+        addNavBarButton(at: .Right, with: R.Strings.Session.navBarFinish)
+
+        timerView.configure(with: timerDuration, progress: 0)
     }
 }
 

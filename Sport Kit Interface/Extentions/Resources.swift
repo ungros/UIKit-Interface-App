@@ -44,8 +44,12 @@ enum R {
         }
 
         enum Session {
-            static let navBarLeft = "Pause"
-            static let navBarRight = "Finish"
+            static let navBarStart = "Start"
+            static let navBarPause = "Pause"
+            static let navBarFinish = "Finish"
+
+            static let elapsedTime = "Elapsed Time"
+            static let remainingTime = "Remaining Time"
         }
 
         enum Progress {

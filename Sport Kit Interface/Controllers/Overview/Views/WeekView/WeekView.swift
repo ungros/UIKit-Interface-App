@@ -24,8 +24,8 @@ extension WeekView {
        setupView(stackView)
     }
 
-    override func constraintViews() {
-        super.constraintViews()
+    override func constaintViews() {
+        super.constaintViews()
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalTo: topAnchor),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor),

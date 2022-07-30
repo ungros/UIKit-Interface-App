@@ -19,7 +19,7 @@ class BaseController: UIViewController {
         
         
         setupViews()
-        constrainViews()
+        constaintViews()
         configureAppearance()
         
         
@@ -30,7 +30,7 @@ class BaseController: UIViewController {
    
     
     func setupViews(){}
-    func constrainViews(){}
+    func constaintViews(){}
     func configureAppearance(){
     view.backgroundColor = R.Colors.background
     

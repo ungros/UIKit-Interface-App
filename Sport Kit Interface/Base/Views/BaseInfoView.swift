@@ -55,8 +55,8 @@ extension BaseInfoView {
         setupView(contentView)
     }
 
-    override func constraintViews() {
-        super.constraintViews()
+    override func constaintViews() {
+        super.constaintViews()
 
         let contentTopAnchor: NSLayoutAnchor = titleLabel.text == nil ? topAnchor : titleLabel.bottomAnchor
         let contentTopOffset: CGFloat = titleLabel.text == nil ? 0 : 10

@@ -13,7 +13,7 @@ class BaseView: UIView {
         super.init(frame: frame)
     
         setupViews()
-        constraintViews()
+        constaintViews()
         configureAppearance()
     }
     
@@ -25,7 +25,7 @@ class BaseView: UIView {
 @objc extension BaseView {
     
     func setupViews(){}
-    func constraintViews(){}
+    func constaintViews(){}
     func configureAppearance(){
     
         backgroundColor = .white

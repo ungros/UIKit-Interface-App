@@ -30,8 +30,8 @@ extension OverviewController {
         view.setupView(navBar)
     }
     
-    override func constrainViews() {
-        super.constrainViews()
+    override func constaintViews() {
+        super.constaintViews()
         NSLayoutConstraint.activate([
             
             navBar.topAnchor.constraint(equalTo: view.topAnchor),
