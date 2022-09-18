@@ -46,7 +46,7 @@ final class TimerView: BaseInfoView {
 
     private let remainingTimeValueLable: UILabel = {
         let lable = UILabel()
-        lable.text = "12:45"
+        //lable.text = "12:45"
         lable.font = R.Fonts.helvelticaRegular(with: 13)
         lable.textColor = R.Colors.titleGray
         lable.textAlignment = .center
@@ -78,8 +78,8 @@ final class TimerView: BaseInfoView {
         let goalValueDevider = duration == 0 ? 1 : duration
         let percent = tempCurrentValue / goalValueDevider
 
-        elapsedTimeLable.text = getDisplayedString(from: Int(tempCurrentValue))
-        remainingTimeLable.text = getDisplayedString(from: Int(duration - tempCurrentValue))
+        elapsedTimeValueLable.text = getDisplayedString(from: Int(tempCurrentValue))
+        remainingTimeValueLable.text = getDisplayedString(from: Int(duration - tempCurrentValue))
         
         progressView.drawProgress(with: CGFloat(percent))
     }
@@ -172,8 +172,8 @@ private extension TimerView {
         let hours = value / 3600
         
         let secondStr = seconds < 10 ? "0\(seconds)" : "\(seconds)"
-        let minutesStr = seconds < 10 ? "0\(minutes)" : "\(minutes)"
-        let hoursStr = seconds < 10 ? "0\(hours)" : "\(hours)"
+        let minutesStr = minutes < 10 ? "0\(minutes)" : "\(minutes)"
+        let hoursStr = hours < 10 ? "0\(hours)" : "\(hours)"
         
         return hours == 0
         ? [minutesStr, secondStr].joined(separator: ":")
