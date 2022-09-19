@@ -14,6 +14,7 @@ extension TimerView {
         private let stackView: UIStackView = {
             let view = UIStackView()
             view.axis = .vertical
+            view.backgroundColor = .red
             view.distribution = .fillProportionally
             view.spacing = 5
             return view
@@ -30,7 +31,7 @@ extension TimerView {
         private let subtitleLabel: UILabel = {
             let label = UILabel()
             label.font = R.Fonts.helvelticaRegular(with: 10)
-            label.textColor = R.Colors.subtitleGray
+            label.textColor = R.Colors.inactive
             label.textAlignment = .center
             return label
         }()
