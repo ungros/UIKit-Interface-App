@@ -7,8 +7,6 @@
 
 import UIKit
 
-import UIKit
-
 enum TimerState {
     case isRuning
     case isPaused
@@ -101,7 +99,6 @@ final class TimerView: BaseInfoView {
         remainingTimeValueLable.text = getDisplayedString(from: Int(duration - tempCurrentValue))
         completedPercentView.configure(with: "COMPLETED", andValue: roundedPercent)
         remainingPercentView.configure(with: "REMAINING", andValue: 100 - roundedPercent)
-        
         progressView.drawProgress(with: CGFloat(percent))
     }
 

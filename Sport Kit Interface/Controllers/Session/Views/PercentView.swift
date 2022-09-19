@@ -14,7 +14,6 @@ extension TimerView {
         private let stackView: UIStackView = {
             let view = UIStackView()
             view.axis = .vertical
-            view.backgroundColor = .red
             view.distribution = .fillProportionally
             view.spacing = 5
             return view
@@ -50,8 +49,8 @@ extension TimerView {
         NSLayoutConstraint.activate([
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
             stackView.topAnchor.constraint(equalTo: topAnchor),
-            stackView.trailingAnchor.constraint(equalTo: leadingAnchor),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
         
