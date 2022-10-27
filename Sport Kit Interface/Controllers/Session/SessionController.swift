@@ -9,7 +9,8 @@ import UIKit
 
 final class SessionController: BaseController {
     private let timerView = TimerView()
-    private let statsViews = BaseInfoView(with: R.Strings.Session.)
+    private let statsView = BaseInfoView(with: R.Strings.Session.workoutStats)
+    private let stepsView = BaseInfoView(with: R.Strings.Session.stepsCounter)
 
     private let timerDuration = 5.0
 
@@ -41,6 +42,8 @@ extension SessionController {
         super.setupViews()
 
         view.setupView(timerView)
+        view.setupView(statsView)
+        view.setupView(stepsView)
     }
 
     override func constaintViews() {
@@ -49,7 +52,11 @@ extension SessionController {
         NSLayoutConstraint.activate([
             timerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             timerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
-            timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15)
+            timerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
+            
+            stepsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
+            stepsView.topAnchor.constraint(equalTo: timerView.bottomAnchor, constant: 10),
+            stepsView.trailingAnchor.constraint(equalTo: view.centerXAnchor, constant: -7.5),
         ])
     }
 

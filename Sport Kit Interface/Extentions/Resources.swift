@@ -55,7 +55,8 @@ enum R {
             static let completed = "Completed"
             static let remaining = "Remaining"
             
-            static let workoutStats = "Workout Stats"
+            static let workoutStats = "Workout stats"
+            static let stepsCounter = "Steps counter"
             
         }
 
