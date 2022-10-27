@@ -207,11 +207,35 @@
 		308928FD289150ED00EBDCE8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				30A53BEC290AB87900714A1A /* Timer */,
+				30A53BEA290AB83A00714A1A /* Stats */,
+				30A53BEB290AB85400714A1A /* Steps */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30A53BEA290AB83A00714A1A /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		30A53BEB290AB85400714A1A /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		30A53BEC290AB87900714A1A /* Timer */ = {
+			isa = PBXGroup;
+			children = (
 				308928FE2891510600EBDCE8 /* TimerView.swift */,
 				308929002891B8D100EBDCE8 /* ProgressView.swift */,
 				30E8008E28D85A8E00E7343E /* PercentView.swift */,
 			);
-			path = Views;
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		30D8A9912889C52D0061D22C /* Navigation */ = {
