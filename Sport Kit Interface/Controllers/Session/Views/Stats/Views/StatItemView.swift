@@ -10,3 +10,15 @@ import UIKit
 final class StatsIemView: BaseView {
     
 }
+
+@objc extension StatsIemView {
+    override func setupViews(){
+        super.setupViews()
+    }
+    override func constaintViews(){
+        super.constaintViews()
+    }
+    override func configureAppearance(){
+        super.configureAppearance()
+    }
+}
