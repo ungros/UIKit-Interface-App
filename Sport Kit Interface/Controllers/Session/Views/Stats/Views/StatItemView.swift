@@ -9,6 +9,22 @@ import UIKit
 
 final class StatsIemView: BaseView {
     
+    private let imagView = UIImageView()
+    
+    private let valueLabel: UILabel = {
+        let label = UILabel()
+        label.font = R.Fonts.helvelticaRegular(with: 17)
+        label.textColor = R.Colors.titleGray
+        return label
+    }()
+    
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = R.Fonts.helvelticaRegular(with: 10)
+        label.textColor = R.Colors.inactive
+        return label
+    }()
+    
 }
 
 @objc extension StatsIemView {
