@@ -9,6 +9,13 @@ import UIKit
 
 final class StatsIemView: BaseView {
     
+    // CONFIGURE STRUC
+    struct StatsItem {
+        let imageName: String
+        let value: String
+        let title: String
+    }
+    
     private let imagView = UIImageView()
     
     private let valueLabel: UILabel = {
@@ -31,6 +38,13 @@ final class StatsIemView: BaseView {
         return viev
     }()
     
+    
+    // CONFIGURE FUNC
+    func configure(with item: StatsItem) {
+        imagView.image = UIImage(named: item.imageName)
+        valueLabel.text = item.value
+        titleLabel.text = item.title
+    }
 }
 
 extension StatsIemView {
