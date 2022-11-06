@@ -79,6 +79,9 @@ enum R {
                 }
             }
         }
+        enum Session {
+            static let hearthRate = UIImage(named: "")
+        }
 
         enum Common {
             static let downArrow = UIImage(named: "all_workouts")

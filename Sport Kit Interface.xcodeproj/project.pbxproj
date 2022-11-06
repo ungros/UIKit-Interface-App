@@ -116,40 +116,31 @@
 		305B4C35287B4A1B00B6A6F1 /* Sport Kit Interface */ = {
 			isa = PBXGroup;
 			children = (
+				30A53BF52917BEFD00714A1A /* Resources */,
 				305B4C52287C2E3C00B6A6F1 /* Extentions */,
 				307C93552882A3210066DAF1 /* Controllers */,
 				30D8A9912889C52D0061D22C /* Navigation */,
 				307C935A2882BC7A0066DAF1 /* Base */,
-				305B4C4C287B4F6000B6A6F1 /* Application */,
-				305B4C4D287B555A00B6A6F1 /* Supporting Files */,
+				305B4C4D287B555A00B6A6F1 /* Application */,
 			);
 			path = "Sport Kit Interface";
 			sourceTree = "<group>";
 		};
-		305B4C4C287B4F6000B6A6F1 /* Application */ = {
+		305B4C4D287B555A00B6A6F1 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				305B4C36287B4A1B00B6A6F1 /* AppDelegate.swift */,
 				305B4C38287B4A1B00B6A6F1 /* SceneDelegate.swift */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		305B4C4D287B555A00B6A6F1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
 				305B4C41287B4A1E00B6A6F1 /* LaunchScreen.storyboard */,
 				305B4C44287B4A1E00B6A6F1 /* Info.plist */,
-				301274FC2885A72C00AF2521 /* Assets.xcassets */,
 			);
-			path = "Supporting Files";
+			path = Application;
 			sourceTree = "<group>";
 		};
 		305B4C52287C2E3C00B6A6F1 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
 				305B4C53287C2E6900B6A6F1 /* UIColor.swift */,
-				305B4C55287C2FC200B6A6F1 /* Resources.swift */,
 				307C93582882AFD50066DAF1 /* UIView.swift */,
 				30D8A98F288858ED0061D22C /* Date.swift */,
 			);
@@ -253,6 +244,15 @@
 				30A53BF2290F134300714A1A /* StatsItemView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		30A53BF52917BEFD00714A1A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				305B4C55287C2FC200B6A6F1 /* Resources.swift */,
+				301274FC2885A72C00AF2521 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		30D8A9912889C52D0061D22C /* Navigation */ = {
