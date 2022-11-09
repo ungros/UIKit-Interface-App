@@ -11,7 +11,7 @@ final class StatsIemView: BaseView {
     
     // CONFIGURE STRUC
     struct StatsItem {
-        let imageName: String
+        let imageName: UIImage?
         let value: String
         let title: String
     }
@@ -41,7 +41,7 @@ final class StatsIemView: BaseView {
     
     // CONFIGURE FUNC
     func configure(with item: StatsItem) {
-        imagView.image = UIImage(named: item.imageName)
+        imagView.image = item.imageName
         valueLabel.text = item.value
         titleLabel.text = item.title
     }

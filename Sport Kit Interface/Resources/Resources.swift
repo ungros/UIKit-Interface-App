@@ -58,6 +58,7 @@ enum R {
             static let workoutStats = "Workout stats"
             static let stepsCounter = "Steps counter"
             
+            static let hearthRate = "Hearth rrate"
         }
 
         enum Progress {
@@ -68,6 +69,8 @@ enum R {
         enum Settings {}
     }
 
+    
+    
     enum Images {
         enum TabBar {
             static func icon(for tab: Tabs) -> UIImage? {
@@ -80,7 +83,9 @@ enum R {
             }
         }
         enum Session {
-            static let hearthRate = UIImage(named: "")
+            static let hearthRate = UIImage(named: "hearth_beat")
+            static let stats = UIImage(named: "")
+            
         }
 
         enum Common {

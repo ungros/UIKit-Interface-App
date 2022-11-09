@@ -15,13 +15,13 @@ final class StatsView: BaseInfoView {
         super.setupViews()
         
         setupView(itemView)
-        itemView.configure(with: StatsIemView.StatsItem(imageName: R.Images.Se,
+        itemView.configure(with: StatsIemView.StatsItem(imageName: R.Images.Session.hearthRate,
                                                         value: "155 bpm",
-                                                        title: R.Strings.Session))
+                                                        title: R.Strings.Session.hearthRate))
         
         NSLayoutConstraint.activate([
-            setupView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
-            setupView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
+            itemView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+            itemView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
             
             
         ])
