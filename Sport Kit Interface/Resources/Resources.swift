@@ -58,7 +58,7 @@ enum R {
             static let workoutStats = "Workout stats"
             static let stepsCounter = "Steps counter"
             
-            static let hearthRate = "Hearth rrate"
+            static let hearthRate = "Hearth rate"
         }
 
         enum Progress {

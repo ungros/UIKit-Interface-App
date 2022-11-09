@@ -64,8 +64,7 @@ extension StatsIemView {
         NSLayoutConstraint.activate([
             imagView.topAnchor.constraint(equalTo: centerYAnchor),
             imagView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            imagView.heightAnchor.constraint(equalToConstant: 23),
-            imagView.widthAnchor.constraint(equalTo: imagView.heightAnchor),
+           //imagView.widthAnchor.constraint(equalToConstant: 23),
             
             stackViev.leadingAnchor.constraint(equalTo: imagView.trailingAnchor, constant: 15),
             stackViev.topAnchor.constraint(equalTo: topAnchor),
