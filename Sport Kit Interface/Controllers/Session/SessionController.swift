@@ -56,8 +56,6 @@ extension SessionController {
             
             statsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             statsView.topAnchor.constraint(equalTo: timerView.bottomAnchor, constant: 10),
-            statsView.trailingAnchor.constraint(equalTo: view.centerXAnchor, constant: -7.5),
-            statsView.heightAnchor.constraint(equalToConstant: 200),
             
             stepsView.leadingAnchor.constraint(equalTo: view.centerXAnchor, constant: 7.5),
             stepsView.topAnchor.constraint(equalTo: statsView.topAnchor),

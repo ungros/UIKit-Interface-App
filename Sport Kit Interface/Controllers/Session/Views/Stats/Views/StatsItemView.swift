@@ -7,11 +7,11 @@
 
 import UIKit
 
-final class StatsIemView: BaseView {
+ class StatsIemView: BaseView {
     
     // CONFIGURE STRUC
-    struct StatsItem {
-        let imageName: UIImage?
+    struct ItemData {
+        let image: UIImage?
         let value: String
         let title: String
     }
@@ -40,8 +40,8 @@ final class StatsIemView: BaseView {
     
     
     // CONFIGURE FUNC
-    func configure(with item: StatsItem) {
-        imagView.image = item.imageName
+    func configure(with item: ItemData) {
+        imagView.image = item.image
         valueLabel.text = item.value
         titleLabel.text = item.title
     }
@@ -62,9 +62,10 @@ extension StatsIemView {
         super.constaintViews()
         
         NSLayoutConstraint.activate([
-            imagView.topAnchor.constraint(equalTo: centerYAnchor),
+            imagView.topAnchor.constraint(equalTo: topAnchor),
             imagView.leadingAnchor.constraint(equalTo: leadingAnchor),
-           //imagView.widthAnchor.constraint(equalToConstant: 23),
+            imagView.widthAnchor.constraint(equalToConstant: 23),
+            imagView.heightAnchor.constraint(equalToConstant: 23),
             
             stackViev.leadingAnchor.constraint(equalTo: imagView.trailingAnchor, constant: 15),
             stackViev.topAnchor.constraint(equalTo: topAnchor),

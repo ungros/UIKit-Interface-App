@@ -9,7 +9,7 @@ import UIKit
 
 class BaseInfoView: BaseView {
 
-    private let titleLabel: UILabel = {
+     let titleLabel: UILabel = {
         let label = UILabel()
         label.font = R.Fonts.helvelticaRegular(with: 13)
         label.textColor = R.Colors.inactive
@@ -18,7 +18,7 @@ class BaseInfoView: BaseView {
 
     private let button = BaseButton(with: .primary)
 
-    private let contentView: UIView = {
+    let contentView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.borderColor = R.Colors.separator.cgColor

@@ -7,23 +7,49 @@
 
 import UIKit
 
-final class StatsView: BaseInfoView {
+ class StatsView: BaseInfoView {
     
-    private let itemView = StatsIemView()
+    private let stackView: UIStackView = {
+        let view = UIStackView()
+        view.axis = .vertical
+        view.spacing = 15
+        view.distribution = .fillEqually
+        view.backgroundColor = .red
+        return view
+    }()
     
+    
+    
+// Configurator
+    func configurex(with items: [StatsIemView.ItemData]) {
+        items.forEach  {
+            let itemView = StatsView()
+            itemView.configure(with: $0)
+            stackView.addArrangedSubview(itemView)
+            
+            }
+        }
+    }
+
+
+extension StatsView {
     override func setupViews() {
         super.setupViews()
-        
-        setupView(itemView)
-        itemView.configure(with: StatsIemView.StatsItem(imageName: R.Images.Session.hearthRate,
-                                                        value: "155 bpm",
-                                                        title: R.Strings.Session.hearthRate.uppercased()))
-        
+        setupView(stackView)
+    }
+    
+    override func constaintViews(){
+        super.constaintViews()
         NSLayoutConstraint.activate([
-            itemView.topAnchor.constraint(equalTo: topAnchor, constant: 45),
-            itemView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
-            
-            
+            stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
+            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15),
+            stackView.bottomAnchor.constraint(equalTo: contentView.topAnchor, constant: -10),
+                 
         ])
+    }
+    
+    override func configureAppearance(){
+        super.configureAppearance()
     }
 }
