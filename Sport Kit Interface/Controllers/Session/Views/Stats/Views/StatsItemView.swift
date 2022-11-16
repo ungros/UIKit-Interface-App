@@ -7,6 +7,34 @@
 
 import UIKit
 
+enum StatsItem {
+    case averagePace(value: String)
+    case heartRate(value: String)
+    case totalDistance(value: String)
+    case totalSteps(value: String)
+    
+    var item: StatsItemView.ItemData {
+        swith self {
+        case .averagePace(let value):
+            return .init(image: R.Images.Session.averagePace,
+                         value: value + " / km",
+                         title: R.Strings.Session.averagePace)
+        case .heartRate(let value):
+            return .init(image: R.Images.Session.heartRate,
+                         value: value + " bpm",
+                         title: R.Strings.Session.heartRate)
+        case .totalDistance(let value):
+            return .init(image: R.Images.Session.totalDistance,
+                         value: value + " km",
+                         title: R.Strings.Session.totalDistance)
+        case .totalSteps(let value):
+            return .init(image: R.Images.Session.totalSteps,
+                         value: value,
+                         title: R.Strings.Session.totalSteps)
+            
+        }
+    }
+}
  class StatsItemView: BaseView {
     
     // CONFIGURE STRUC
@@ -47,7 +75,7 @@ import UIKit
     }
 }
 
-extension StatsItemView {
+extension StatsItemView  {
    
     override func setupViews(){
         super.setupViews()

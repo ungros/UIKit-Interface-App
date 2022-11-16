@@ -81,6 +81,8 @@ extension SessionController {
             self.navBarRightButtonHanler()
         }
         }
+        
+        statsView.configure(with: <#T##[StatsItemView.ItemData]#>)
     }
 }
 
