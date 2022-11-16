@@ -9,7 +9,7 @@ import UIKit
 
 class BaseInfoView: BaseView {
 
-     let titleLabel: UILabel = {
+    private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = R.Fonts.helvelticaRegular(with: 13)
         label.textColor = R.Colors.inactive

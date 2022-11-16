@@ -7,7 +7,7 @@
 
 import UIKit
 
- class StatsIemView: BaseView {
+ class StatsItemView: BaseView {
     
     // CONFIGURE STRUC
     struct ItemData {
@@ -47,7 +47,7 @@ import UIKit
     }
 }
 
-extension StatsIemView {
+extension StatsItemView {
    
     override func setupViews(){
         super.setupViews()

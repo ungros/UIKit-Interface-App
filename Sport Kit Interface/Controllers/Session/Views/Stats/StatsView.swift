@@ -21,9 +21,9 @@ import UIKit
     
     
 // Configurator
-    func configurex(with items: [StatsIemView.ItemData]) {
+    func configure(with items: [StatsItemView.ItemData]) {
         items.forEach  {
-            let itemView = StatsView()
+            let itemView = StatsItemView()
             itemView.configure(with: $0)
             stackView.addArrangedSubview(itemView)
             
