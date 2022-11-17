@@ -13,22 +13,22 @@ enum StatsItem {
     case totalDistance(value: String)
     case totalSteps(value: String)
     
-    var item: StatsItemView.ItemData {
-        swith self {
+    var data: StatsItemView.ItemData {
+        switch self {
         case .averagePace(let value):
-            return .init(image: R.Images.Session.averagePace,
+            return .init(image: R.Images.Session.Stats.distance,
                          value: value + " / km",
                          title: R.Strings.Session.averagePace)
         case .heartRate(let value):
-            return .init(image: R.Images.Session.heartRate,
+            return .init(image: R.Images.Session.hearthRate,
                          value: value + " bpm",
-                         title: R.Strings.Session.heartRate)
+                         title: R.Strings.Session.hearthRate)
         case .totalDistance(let value):
-            return .init(image: R.Images.Session.totalDistance,
+            return .init(image: R.Images.Session.Stats.distance,
                          value: value + " km",
                          title: R.Strings.Session.totalDistance)
         case .totalSteps(let value):
-            return .init(image: R.Images.Session.totalSteps,
+            return .init(image: R.Images.Session.Stats.steps,
                          value: value,
                          title: R.Strings.Session.totalSteps)
             
@@ -68,10 +68,10 @@ enum StatsItem {
     
     
     // CONFIGURE FUNC
-    func configure(with item: ItemData) {
-        imagView.image = item.image
-        valueLabel.text = item.value
-        titleLabel.text = item.title
+    func configure(with item: StatsItem) {
+        imagView.image = item.data.image
+        valueLabel.text = item.data.value
+        titleLabel.text = item.data.title.uppercased()
     }
 }
 

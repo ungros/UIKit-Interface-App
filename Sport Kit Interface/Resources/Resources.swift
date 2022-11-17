@@ -9,17 +9,6 @@ import UIKit
 
 
 enum R {
-    enum Colors {
-        static let active = UIColor(hexString: "#A834D1")
-        static let inactive = UIColor(hexString: "#929DA5")
-
-        static let background = UIColor(hexString: "#F8F9F9")
-        static let separator = UIColor(hexString: "#E8ECEF")
-        static let secondary = UIColor(hexString: "#F0F3FF")
-
-        static let titleGray = UIColor(hexString: "#545C77")
-        static let subtitleGray = UIColor(hexString: "#D8D8D8")
-    }
 
     enum Strings {
         enum TabBar {
@@ -58,7 +47,12 @@ enum R {
             static let workoutStats = "Workout stats"
             static let stepsCounter = "Steps counter"
             
-            static let hearthRate = "Hearth rate"
+            static let hearthRate = "HEATH RATE"
+            static let averagePace = "AVERAGE PACE"
+            static let totalSteps = "TOTAL STEPS"
+            static let totalDistance = "TOTAL DISTANCE"
+            
+            
         }
 
         enum Progress {
@@ -86,6 +80,12 @@ enum R {
             static let hearthRate = UIImage(named: "hearth_beat")
             static let stats = UIImage(named: "")
             
+            enum Stats {
+                static let distance = UIImage(named: "av_distance")
+                static let pace = UIImage(named: "av_pace")
+                static let steps = UIImage(named: "av_speed")
+                static let hearthBeat = UIImage(named: "hearth_beat")
+            }
         }
 
         enum Common {
@@ -98,6 +98,18 @@ enum R {
         static func helvelticaRegular(with size: CGFloat) -> UIFont {
             UIFont(name: "Helvetica", size: size) ?? UIFont()
         }
+    }
+    
+    enum Colors {
+        static let active = UIColor(hexString: "#A834D1")
+        static let inactive = UIColor(hexString: "#929DA5")
+
+        static let background = UIColor(hexString: "#F8F9F9")
+        static let separator = UIColor(hexString: "#E8ECEF")
+        static let secondary = UIColor(hexString: "#F0F3FF")
+
+        static let titleGray = UIColor(hexString: "#545C77")
+        static let subtitleGray = UIColor(hexString: "#D8D8D8")
     }
 }
 

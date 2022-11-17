@@ -82,7 +82,7 @@ extension SessionController {
         }
         }
         
-        statsView.configure(with: <#T##[StatsItemView.ItemData]#>)
+        
     }
 }
 
