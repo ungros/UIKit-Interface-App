@@ -82,7 +82,10 @@ extension SessionController {
         }
         }
         
-        
+        statsView.configure(with: [.heartRate(value: "155"),
+                                   .averagePace(value: "8'20''"),
+                                   .totalSteps(value: "7,682"),
+                                   .totalDistance(value: "8.25")])
     }
 }
 

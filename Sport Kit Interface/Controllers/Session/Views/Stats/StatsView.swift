@@ -21,7 +21,7 @@ import UIKit
     
     
 // Configurator
-    func configure(with items: [StatsItemView.ItemData]) {
+    func configure(with items: [StatsItem]) {
         items.forEach  {
             let itemView = StatsItemView()
             itemView.configure(with: $0)

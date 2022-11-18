@@ -31,7 +31,6 @@ enum StatsItem {
             return .init(image: R.Images.Session.Stats.steps,
                          value: value,
                          title: R.Strings.Session.totalSteps)
-            
         }
     }
 }
