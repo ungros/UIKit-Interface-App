@@ -89,10 +89,10 @@ extension StatsItemView  {
         super.constaintViews()
         
         NSLayoutConstraint.activate([
-            imagView.topAnchor.constraint(equalTo: topAnchor),
+            imagView.centerYAnchor.constraint(equalTo: centerYAnchor),
             imagView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imagView.widthAnchor.constraint(equalToConstant: 23),
-            imagView.heightAnchor.constraint(equalToConstant: 23),
+        //    imagView.heightAnchor.constraint(equalToConstant: 23),
             
             stackViev.leadingAnchor.constraint(equalTo: imagView.trailingAnchor, constant: 15),
             stackViev.topAnchor.constraint(equalTo: topAnchor),

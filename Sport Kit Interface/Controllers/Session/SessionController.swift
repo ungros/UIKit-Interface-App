@@ -82,6 +82,10 @@ extension SessionController {
         }
         }
         
+//        timerView.callBack = { [weak self] in
+//            self?.navBarRightButtonHandler()
+//        }
+        
         statsView.configure(with: [.heartRate(value: "155"),
                                    .averagePace(value: "8'20''"),
                                    .totalSteps(value: "7,682"),

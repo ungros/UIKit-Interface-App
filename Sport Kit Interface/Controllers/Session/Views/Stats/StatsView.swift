@@ -14,7 +14,7 @@ import UIKit
         view.axis = .vertical
         view.spacing = 15
         view.distribution = .fillEqually
-        view.backgroundColor = .red
+     //   view.backgroundColor = .red
         return view
     }()
     

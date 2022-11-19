@@ -81,10 +81,10 @@ enum R {
             static let stats = UIImage(named: "")
             
             enum Stats {
-                static let distance = UIImage(named: "av_distance")
-                static let pace = UIImage(named: "av_pace")
-                static let steps = UIImage(named: "av_speed")
-                static let hearthBeat = UIImage(named: "hearth_beat")
+                static let distance = UIImage(named: "stats_totalDistance")
+                static let pace = UIImage(named: "stats_averagePace")
+                static let steps = UIImage(named: "stats_totalSteps")
+                static let hearthBeat = UIImage(named: "stats_heartRate")
             }
         }
 
