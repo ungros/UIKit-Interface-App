@@ -16,11 +16,11 @@ enum StatsItem {
     var data: StatsItemView.ItemData {
         switch self {
         case .averagePace(let value):
-            return .init(image: R.Images.Session.Stats.distance,
+            return .init(image: R.Images.Session.Stats.pace,
                          value: value + " / km",
                          title: R.Strings.Session.averagePace)
         case .heartRate(let value):
-            return .init(image: R.Images.Session.hearthBeat,
+            return .init(image: R.Images.Session.Stats.heartRate,
                          value: value + " bpm",
                          title: R.Strings.Session.heartRate)
         case .totalDistance(let value):

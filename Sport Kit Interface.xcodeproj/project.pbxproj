@@ -214,8 +214,8 @@
 		30A53BEA290AB83A00714A1A /* Stats */ = {
 			isa = PBXGroup;
 			children = (
-				30A53BF1290F131C00714A1A /* Views */,
 				30A53BED290F10B000714A1A /* StatsView.swift */,
+				30A53BF1290F131C00714A1A /* Views */,
 			);
 			path = Stats;
 			sourceTree = "<group>";
