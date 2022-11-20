@@ -47,10 +47,11 @@ enum R {
             static let workoutStats = "Workout stats"
             static let stepsCounter = "Steps counter"
             
-            static let hearthRate = "HEATH RATE"
-            static let averagePace = "AVERAGE PACE"
-            static let totalSteps = "TOTAL STEPS"
-            static let totalDistance = "TOTAL DISTANCE"
+            static let workoutStats1 = "Workout stats"
+            static let averagePace = "Average pace"
+            static let heartRate = "Heart rate"
+            static let totalDistance = "Total distance"
+            static let totalSteps = "Total steps"
             
             
         }
@@ -77,7 +78,7 @@ enum R {
             }
         }
         enum Session {
-            static let hearthRate = UIImage(named: "hearth_beat")
+            static let hearthBeat = UIImage(named: "hearth_beat")
             static let stats = UIImage(named: "")
             
             enum Stats {

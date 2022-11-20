@@ -20,9 +20,9 @@ enum StatsItem {
                          value: value + " / km",
                          title: R.Strings.Session.averagePace)
         case .heartRate(let value):
-            return .init(image: R.Images.Session.hearthRate,
+            return .init(image: R.Images.Session.hearthBeat,
                          value: value + " bpm",
-                         title: R.Strings.Session.hearthRate)
+                         title: R.Strings.Session.heartRate)
         case .totalDistance(let value):
             return .init(image: R.Images.Session.Stats.distance,
                          value: value + " km",
@@ -59,7 +59,7 @@ enum StatsItem {
         return label
     }()
     
-    private let stackViev: UIStackView = {
+    private let stackView: UIStackView = {
         let viev = UIStackView()
         viev.axis = .vertical
         return viev
@@ -80,9 +80,9 @@ extension StatsItemView  {
         super.setupViews()
         
         setupView(imagView)
-        setupView(stackViev)
-        stackViev.addArrangedSubview(valueLabel)
-        stackViev.addArrangedSubview(titleLabel)
+        setupView(stackView)
+        stackView.addArrangedSubview(valueLabel)
+        stackView.addArrangedSubview(titleLabel)
     }
    
     override func constaintViews(){
@@ -92,12 +92,11 @@ extension StatsItemView  {
             imagView.centerYAnchor.constraint(equalTo: centerYAnchor),
             imagView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imagView.widthAnchor.constraint(equalToConstant: 23),
-        //    imagView.heightAnchor.constraint(equalToConstant: 23),
             
-            stackViev.leadingAnchor.constraint(equalTo: imagView.trailingAnchor, constant: 15),
-            stackViev.topAnchor.constraint(equalTo: topAnchor),
-            stackViev.bottomAnchor.constraint(equalTo: bottomAnchor),
-            stackViev.trailingAnchor.constraint(equalTo: trailingAnchor)
+            stackView.leadingAnchor.constraint(equalTo: imagView.trailingAnchor, constant: 15),
+            stackView.topAnchor.constraint(equalTo: topAnchor),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
     }
     
