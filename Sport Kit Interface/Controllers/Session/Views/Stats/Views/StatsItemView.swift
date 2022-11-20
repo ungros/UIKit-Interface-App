@@ -43,7 +43,7 @@ enum StatsItem {
         let title: String
     }
     
-    private let imagView = UIImageView()
+    private let imageView = UIImageView()
     
     private let valueLabel: UILabel = {
         let label = UILabel()
@@ -68,18 +68,17 @@ enum StatsItem {
     
     // CONFIGURE FUNC
     func configure(with item: StatsItem) {
-        imagView.image = item.data.image
+        imageView.image = item.data.image
         valueLabel.text = item.data.value
         titleLabel.text = item.data.title.uppercased()
     }
 }
 
-extension StatsItemView  {
-   
+extension StatsItemView {
     override func setupViews(){
         super.setupViews()
         
-        setupView(imagView)
+        setupView(imageView)
         setupView(stackView)
         stackView.addArrangedSubview(valueLabel)
         stackView.addArrangedSubview(titleLabel)
@@ -89,11 +88,11 @@ extension StatsItemView  {
         super.constaintViews()
         
         NSLayoutConstraint.activate([
-            imagView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            imagView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            imagView.widthAnchor.constraint(equalToConstant: 23),
+            imageView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            imageView.widthAnchor.constraint(equalToConstant: 23),
             
-            stackView.leadingAnchor.constraint(equalTo: imagView.trailingAnchor, constant: 15),
+            stackView.leadingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: 15),
             stackView.topAnchor.constraint(equalTo: topAnchor),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor)
