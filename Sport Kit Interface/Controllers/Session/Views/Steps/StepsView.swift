@@ -47,10 +47,10 @@ extension StepsView {
        super.constaintViews()
      
        NSLayoutConstraint.activate([
-           StepsView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15),
-           StepsView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
-           StepsView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15),
-           StepsView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
+        barsView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15),
+        barsView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
+        barsView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15),
+        barsView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
        ])
    }
    

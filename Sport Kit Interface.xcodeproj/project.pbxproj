@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		301274FD2885A72C00AF2521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301274FC2885A72C00AF2521 /* Assets.xcassets */; };
 		301274FF2888106900AF2521 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301274FE2888106900AF2521 /* WeekView.swift */; };
+		3021B64C292B9B5F00B54DC5 /* BaseBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021B64B292B9B5F00B54DC5 /* BaseBarsView.swift */; };
+		3021B64F292BA1E000B54DC5 /* BaseBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021B64E292BA1E000B54DC5 /* BaseBarView.swift */; };
 		304B926E2883F2C4003A542D /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B926D2883F2C4003A542D /* BaseButton.swift */; };
 		304B92702885762D003A542D /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B926F2885762D003A542D /* OverviewNavBar.swift */; };
 		304B927228857673003A542D /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304B927128857673003A542D /* BaseView.swift */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		301274FC2885A72C00AF2521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		301274FE2888106900AF2521 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		3021B64B292B9B5F00B54DC5 /* BaseBarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBarsView.swift; sourceTree = "<group>"; };
+		3021B64E292BA1E000B54DC5 /* BaseBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBarView.swift; sourceTree = "<group>"; };
 		304B926D2883F2C4003A542D /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		304B926F2885762D003A542D /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		304B927128857673003A542D /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -86,6 +90,15 @@
 				30B956F128881948002A4088 /* WeekDayView.swift */,
 			);
 			path = WeekView;
+			sourceTree = "<group>";
+		};
+		3021B64D292B9B6900B54DC5 /* BarsViews */ = {
+			isa = PBXGroup;
+			children = (
+				3021B64B292B9B5F00B54DC5 /* BaseBarsView.swift */,
+				3021B64E292BA1E000B54DC5 /* BaseBarView.swift */,
+			);
+			path = BarsViews;
 			sourceTree = "<group>";
 		};
 		304B926C2883F299003A542D /* Views */ = {
@@ -162,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				30D8A9922889C58E0061D22C /* Views */,
-				307C93562882A3430066DAF1 /* BaseController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -267,6 +279,8 @@
 		30D8A9922889C58E0061D22C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				307C93562882A3430066DAF1 /* BaseController.swift */,
+				3021B64D292B9B6900B54DC5 /* BarsViews */,
 				304B926D2883F2C4003A542D /* BaseButton.swift */,
 				304B927128857673003A542D /* BaseView.swift */,
 				30D8A9932889C5BD0061D22C /* BaseInfoView.swift */,
@@ -349,6 +363,7 @@
 				305B4C3B287B4A1B00B6A6F1 /* OverviewController.swift in Sources */,
 				304B92702885762D003A542D /* OverviewNavBar.swift in Sources */,
 				305B4C56287C2FC200B6A6F1 /* Resources.swift in Sources */,
+				3021B64C292B9B5F00B54DC5 /* BaseBarsView.swift in Sources */,
 				305B4C51287C2BB700B6A6F1 /* TabBarController.swift in Sources */,
 				30BF946E28829739006F2C47 /* NavBarController.swift in Sources */,
 				30D8A990288858ED0061D22C /* Date.swift in Sources */,
@@ -364,6 +379,7 @@
 				30E8008F28D85A8E00E7343E /* PercentView.swift in Sources */,
 				304B927228857673003A542D /* BaseView.swift in Sources */,
 				30B956F228881948002A4088 /* WeekDayView.swift in Sources */,
+				3021B64F292BA1E000B54DC5 /* BaseBarView.swift in Sources */,
 				307C93592882AFD50066DAF1 /* UIView.swift in Sources */,
 				30A53BF0290F10BF00714A1A /* StepsView.swift in Sources */,
 				30A53BEE290F10B000714A1A /* StatsView.swift in Sources */,
