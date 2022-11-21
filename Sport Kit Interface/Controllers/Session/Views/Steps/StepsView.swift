@@ -9,27 +9,11 @@ import UIKit
 
 final class StepsView: BaseInfoView {
    
-   private let barsView: UIStackView = {
-       let view = UIStackView()
-       view.axis = .vertical
-       view.spacing = 15
-      
-       view.backgroundColor = .red
-       return view
-   }()
+     private let barsView = UIView()
+     
    
-   
-   
-// Configurator
-   func configure(with items: [StatsItem]) {
-//       items.forEach  {
-//
-           barsView.backgroundColor = .red
-           
-           let itemView = StatsItemView()
-//           itemView.configure(with: $0)
-//           stackView.addArrangedSubview(itemView)
-//
+     func configure(with items: [BaseBarView.Data]) {
+         barsView.configureX(with: items)
            }
        }
 
@@ -48,8 +32,8 @@ extension StepsView {
      
        NSLayoutConstraint.activate([
         barsView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15),
-        barsView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 15),
-        barsView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -15),
+        barsView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+        barsView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
         barsView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
        ])
    }

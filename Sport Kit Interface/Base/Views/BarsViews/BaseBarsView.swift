@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class BaseBarsView: BaseView {
+ class BaseBarsView: BaseView {
     
     private let stackView: UIStackView = {
         let view = UIStackView()
@@ -16,10 +16,10 @@ final class BaseBarsView: BaseView {
         return view
     }()
     
-    func configure(with data: [String]) {
-        data.forEach { _ in
-            let barView = UIView()
-            
+     //zzz
+    func configureX(with data: [BaseBarView.Data]) {
+        data.forEach {
+            let barView = BaseBarView(data: $0)
             stackView.addArrangedSubview(barView)
         }
     }
