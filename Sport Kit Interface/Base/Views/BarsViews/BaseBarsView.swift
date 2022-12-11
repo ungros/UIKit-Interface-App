@@ -5,9 +5,10 @@
 //  Created by Roman on 21.11.2022.
 //
 
+import Foundation
 import UIKit
 
- class BaseBarsView: BaseView {
+ final class BaseBarsView: BaseView {
     
     private let stackView: UIStackView = {
         let view = UIStackView()
@@ -17,13 +18,14 @@ import UIKit
     }()
     
      //zzz
-    func configureX(with data: [BaseBarView.Data]) {
-        data.forEach {
-            let barView = BaseBarView(data: $0)
-            stackView.addArrangedSubview(barView)
+     func configureX(with data: [BaseBarView.Data]) {
+         data.forEach {
+             let barView = BaseBarView(data: $0)
+             stackView.addArrangedSubview(barView)
+         }
         }
     }
-}
+
 
 
 

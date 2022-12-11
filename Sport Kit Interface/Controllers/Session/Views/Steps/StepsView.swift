@@ -9,7 +9,7 @@ import UIKit
 
 final class StepsView: BaseInfoView {
    
-     private let barsView = UIView()
+     private let barsView = BaseBarsView()
      
    
      func configure(with items: [BaseBarView.Data]) {
