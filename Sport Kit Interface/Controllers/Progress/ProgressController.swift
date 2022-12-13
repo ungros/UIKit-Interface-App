@@ -48,6 +48,14 @@ extension ProgressController {
             dailyPerformanceView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
             dailyPerformanceView.heightAnchor.constraint(equalTo: dailyPerformanceView.widthAnchor, multiplier: 0.68)
         ])
+        
+        dailyPerformanceView.configure(with: [.init(value: "1", heigntMultiplier: 0.25, title: "Mon"),
+                                              .init(value: "2", heigntMultiplier: 0.4, title: "Teu"),
+                                              .init(value: "3", heigntMultiplier: 0.6, title: "Wen"),
+                                              .init(value: "4", heigntMultiplier: 0.8, title: "Thu"),
+                                              .init(value: "5", heigntMultiplier: 1, title: "Fri"),
+                                              .init(value: "6", heigntMultiplier: 0.6, title: "Sat"),
+                                              .init(value: "7", heigntMultiplier: 0.4, title: "Sun")])
     }
 }
          

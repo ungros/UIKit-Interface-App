@@ -105,7 +105,7 @@ enum R {
     }
     
     enum Colors {
-        static let active = UIColor(hexString: "#A834D1")
+        static let active = UIColor(hexString: "#AF52DE")
         static let inactive = UIColor(hexString: "#929DA5")
 
         static let background = UIColor(hexString: "#F8F9F9")
