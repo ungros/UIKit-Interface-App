@@ -11,7 +11,7 @@ class BaseView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-    
+        
         setupViews()
         constaintViews()
         configureAppearance()
@@ -27,7 +27,7 @@ class BaseView: UIView {
     func setupViews(){}
     func constaintViews(){}
     func configureAppearance(){
-    
+        
         backgroundColor = .white
     }
     
