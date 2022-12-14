@@ -7,9 +7,8 @@
 
 import UIKit
 
-
 enum R {
-
+    
     enum Strings {
         enum TabBar {
             static func title(for tab: Tabs) -> String {
@@ -21,23 +20,23 @@ enum R {
                 }
             }
         }
-
+        
         enum NavBar {
             static let overview = "Today"
             static let session = "High Intensity Cardio"
             static let progress = "Workout Progress"
             static let settings = "Settings"
         }
-
+        
         enum Overview {
             static let allWorcoutsButton = "All Workouts"
         }
-
+        
         enum Session {
             static let navBarStart = "Start"
             static let navBarPause = "Pause"
             static let navBarFinish = "Finish"
-
+            
             static let elapsedTime = "Elapsed Time"
             static let remainingTime = "Remaining Time"
             
@@ -52,22 +51,22 @@ enum R {
             static let heartRate = "Heart rate"
             static let totalDistance = "Total distance"
             static let totalSteps = "Total steps"
-            
-            
+               
         }
-
+        
         enum Progress {
             static let navBarLeft = "Export"
             static let navBarRight = "Details"
             
             static let dailyPerformance = "Daily performance"
             static let last7Days = "Last 7 days"
+            
+            static let monthlyPerformance = "Monthly performance"
+            static let last10Month = "Last 10 moth"
         }
-//xxx
+    
         enum Settings {}
     }
-
-    
     
     enum Images {
         enum TabBar {
@@ -80,6 +79,7 @@ enum R {
                 }
             }
         }
+        
         enum Session {
             static let hearthBeat = UIImage(named: "hearth_beat")
             static let stats = UIImage(named: "")
@@ -91,13 +91,13 @@ enum R {
                 static let pace = UIImage(named: "stats_averagePace")
             }
         }
-
+        
         enum Common {
             static let downArrow = UIImage(named: "all_workouts")
             static let add = UIImage(named: "add_icon")
         }
     }
-
+    
     enum Fonts {
         static func helvelticaRegular(with size: CGFloat) -> UIFont {
             UIFont(name: "Helvetica", size: size) ?? UIFont()
@@ -107,15 +107,12 @@ enum R {
     enum Colors {
         static let active = UIColor(hexString: "#AF52DE")
         static let inactive = UIColor(hexString: "#929DA5")
-
+        
         static let background = UIColor(hexString: "#F8F9F9")
         static let separator = UIColor(hexString: "#E8ECEF")
         static let secondary = UIColor(hexString: "#F0F3FF")
-
+        
         static let titleGray = UIColor(hexString: "#545C77")
         static let subtitleGray = UIColor(hexString: "#D8D8D8")
     }
 }
-
-
-

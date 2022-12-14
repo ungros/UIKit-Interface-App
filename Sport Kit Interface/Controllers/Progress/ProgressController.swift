@@ -9,9 +9,10 @@ import UIKit
 
 class ProgressController: BaseController {
     
-    private let dailyPerformanceView = DailyPerformanceView(with: R.Strings.Progress.dailyPerformance, buttonTitle: R.Strings.Progress.last7Days)
-    
-    
+    private let dailyPerformanceView = DailyPerformanceView(with: R.Strings.Progress.dailyPerformance,
+                                                            buttonTitle: R.Strings.Progress.last7Days)
+    private let monthlyPerformanceView = MonthlyPerformanceView(with: R.Strings.Progress.monthlyPerformance,
+                                                                buttonTitle: R.Strings.Progress.last10Month)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,7 @@ extension ProgressController {
         super.setupViews()
         
         view.setupView(dailyPerformanceView)
+        view.setupView(monthlyPerformanceView)
     }
     
     override func configureAppearance() {
@@ -46,7 +48,12 @@ extension ProgressController {
             dailyPerformanceView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
             dailyPerformanceView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15),
             dailyPerformanceView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
-            dailyPerformanceView.heightAnchor.constraint(equalTo: dailyPerformanceView.widthAnchor, multiplier: 0.68)
+            dailyPerformanceView.heightAnchor.constraint(equalTo: dailyPerformanceView.widthAnchor, multiplier: 0.68),
+            
+            monthlyPerformanceView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
+            monthlyPerformanceView.topAnchor.constraint(equalTo: dailyPerformanceView.bottomAnchor, constant: 15),
+            monthlyPerformanceView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -15),
+            monthlyPerformanceView.heightAnchor.constraint(equalTo: monthlyPerformanceView.widthAnchor, multiplier: 1.06),
         ])
         
         dailyPerformanceView.configure(with: [.init(value: "1", heigntMultiplier: 0.25, title: "Mon"),
@@ -58,8 +65,3 @@ extension ProgressController {
                                               .init(value: "7", heigntMultiplier: 0.4, title: "Sun")])
     }
 }
-         
-        
-    
-    
-

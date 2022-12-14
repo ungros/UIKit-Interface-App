@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30031EF92949EAB70061796E /* MonthlyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30031EF82949EAB70061796E /* MonthlyPerformanceView.swift */; };
 		301274FD2885A72C00AF2521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301274FC2885A72C00AF2521 /* Assets.xcassets */; };
 		301274FF2888106900AF2521 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301274FE2888106900AF2521 /* WeekView.swift */; };
 		3021B64C292B9B5F00B54DC5 /* BaseBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021B64B292B9B5F00B54DC5 /* BaseBarsView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30031EF82949EAB70061796E /* MonthlyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyPerformanceView.swift; sourceTree = "<group>"; };
 		301274FC2885A72C00AF2521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		301274FE2888106900AF2521 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		3021B64B292B9B5F00B54DC5 /* BaseBarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBarsView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30031EF72949EA8D0061796E /* MonthlyPerformanceView */ = {
+			isa = PBXGroup;
+			children = (
+				30031EF82949EAB70061796E /* MonthlyPerformanceView.swift */,
+			);
+			path = MonthlyPerformanceView;
+			sourceTree = "<group>";
+		};
 		301275002888107200AF2521 /* WeekView */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 		304D43ED29451F64002C91DE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				30031EF72949EA8D0061796E /* MonthlyPerformanceView */,
 				304D43EE29451F93002C91DE /* Performance */,
 			);
 			path = Views;
@@ -382,6 +393,7 @@
 				305B4C3B287B4A1B00B6A6F1 /* OverviewController.swift in Sources */,
 				304B92702885762D003A542D /* OverviewNavBar.swift in Sources */,
 				305B4C56287C2FC200B6A6F1 /* Resources.swift in Sources */,
+				30031EF92949EAB70061796E /* MonthlyPerformanceView.swift in Sources */,
 				3021B64C292B9B5F00B54DC5 /* BaseBarsView.swift in Sources */,
 				305B4C51287C2BB700B6A6F1 /* TabBarController.swift in Sources */,
 				30BF946E28829739006F2C47 /* NavBarController.swift in Sources */,
