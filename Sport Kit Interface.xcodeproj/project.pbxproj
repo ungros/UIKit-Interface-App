@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		30031EF92949EAB70061796E /* MonthlyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30031EF82949EAB70061796E /* MonthlyPerformanceView.swift */; };
+		30031EFC294CF3320061796E /* BaseChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30031EFB294CF3320061796E /* BaseChartsView.swift */; };
+		30031EFE294D07A90061796E /* YAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30031EFD294D07A90061796E /* YAxisView.swift */; };
 		301274FD2885A72C00AF2521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301274FC2885A72C00AF2521 /* Assets.xcassets */; };
 		301274FF2888106900AF2521 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301274FE2888106900AF2521 /* WeekView.swift */; };
 		3021B64C292B9B5F00B54DC5 /* BaseBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021B64B292B9B5F00B54DC5 /* BaseBarsView.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		30031EF82949EAB70061796E /* MonthlyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyPerformanceView.swift; sourceTree = "<group>"; };
+		30031EFB294CF3320061796E /* BaseChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseChartsView.swift; sourceTree = "<group>"; };
+		30031EFD294D07A90061796E /* YAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YAxisView.swift; sourceTree = "<group>"; };
 		301274FC2885A72C00AF2521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		301274FE2888106900AF2521 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		3021B64B292B9B5F00B54DC5 /* BaseBarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseBarsView.swift; sourceTree = "<group>"; };
@@ -93,6 +97,15 @@
 				30031EF82949EAB70061796E /* MonthlyPerformanceView.swift */,
 			);
 			path = MonthlyPerformanceView;
+			sourceTree = "<group>";
+		};
+		30031EFA294CF3030061796E /* ChartsViews */ = {
+			isa = PBXGroup;
+			children = (
+				30031EFB294CF3320061796E /* BaseChartsView.swift */,
+				30031EFD294D07A90061796E /* YAxisView.swift */,
+			);
+			path = ChartsViews;
 			sourceTree = "<group>";
 		};
 		301275002888107200AF2521 /* WeekView */ = {
@@ -309,8 +322,9 @@
 		30D8A9922889C58E0061D22C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				307C93562882A3430066DAF1 /* BaseController.swift */,
+				30031EFA294CF3030061796E /* ChartsViews */,
 				3021B64D292B9B6900B54DC5 /* BarsViews */,
+				307C93562882A3430066DAF1 /* BaseController.swift */,
 				304B926D2883F2C4003A542D /* BaseButton.swift */,
 				304B927128857673003A542D /* BaseView.swift */,
 				30D8A9932889C5BD0061D22C /* BaseInfoView.swift */,
@@ -402,9 +416,11 @@
 				307C93602882BCE00066DAF1 /* SessionController.swift in Sources */,
 				304B926E2883F2C4003A542D /* BaseButton.swift in Sources */,
 				308928FF2891510600EBDCE8 /* TimerView.swift in Sources */,
+				30031EFC294CF3320061796E /* BaseChartsView.swift in Sources */,
 				308929012891B8D100EBDCE8 /* ProgressView.swift in Sources */,
 				307C93622882BD030066DAF1 /* ProgressController.swift in Sources */,
 				305B4C37287B4A1B00B6A6F1 /* AppDelegate.swift in Sources */,
+				30031EFE294D07A90061796E /* YAxisView.swift in Sources */,
 				305B4C39287B4A1B00B6A6F1 /* SceneDelegate.swift in Sources */,
 				307C93572882A3430066DAF1 /* BaseController.swift in Sources */,
 				30A53BF3290F134300714A1A /* StatsItemView.swift in Sources */,

@@ -1,34 +1,31 @@
 //
-//  BaseBarsView.swift
+//  BaseChartsView.swift
 //  Sport Kit Interface
 //
-//  Created by Roman on 21.11.2022.
+//  Created by Roman on 16.12.2022.
 //
 
 import UIKit
 
-final class BaseBarsView: BaseView {
-    
-    private let stackView: UIStackView = {
-        let view = UIStackView()
-        view.distribution = .fillEqually
-        
-        return view
-    }()
-    
-    //zzz
-    func configureX(with data: [BaseBarView.Data]) {
-        data.forEach {
-            let barView = BaseBarView(data: $0)
-            stackView.addArrangedSubview(barView)
-        }
+extension BaseChartsView {
+    struct Data {
+        let value: Int
+        let title: String
     }
 }
 
+final class BaseChartsView: BaseView {
+    
+  
+    func configureX(with data: [BaseBarView.Data]) {
+       
+        }
+    }
 
 
 
-extension BaseBarsView {
+
+extension BaseChartsView {
     override func setupViews() {
         super.setupViews()
         

@@ -9,12 +9,12 @@ import UIKit
 
 final class MonthlyPerformanceView: BaseInfoView {
     
-    private let chartsView = UIView() //BaseBarsView()
+    private let chartsView = BaseChartsView()
     
-    func configure(with items: [BaseBarView.Data]) {
-        //barsView.configureX(with: items)
-          }
-      }
+    func configure(with items: [BaseChartsView.Data]) {
+        chartsView.configureX(with: items)
+    }
+}
 
 extension MonthlyPerformanceView {
   
