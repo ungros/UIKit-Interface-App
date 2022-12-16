@@ -16,9 +16,12 @@ extension BaseChartsView {
 
 final class BaseChartsView: BaseView {
     
-  
-    func configureX(with data: [BaseBarView.Data]) {
-       
+    private let yAxisView = YAxisView()
+    private let xAxisView = XAxisView()
+    
+    func configureX(with data: [BaseChartsView.Data]) {
+        yAxisView.configure(with: data)
+        xAxisView.configure(with: data)
         }
     }
 
@@ -29,8 +32,9 @@ extension BaseChartsView {
     override func setupViews() {
         super.setupViews()
         
-        setupView(stackView)
-        
+        setupView(BaseChartsView)
+        setupView(xAxisView)
+            
     }
     
     override func constaintViews() {
