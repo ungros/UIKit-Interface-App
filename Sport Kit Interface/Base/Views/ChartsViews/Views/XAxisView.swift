@@ -11,7 +11,6 @@ final  class XAxisView: BaseView {
     
     private let stackView: UIStackView = {
         let view = UIStackView()
-        view.axis = .vertical
         view.distribution = .equalSpacing
         return view
     }()
@@ -20,12 +19,13 @@ final  class XAxisView: BaseView {
         stackView.arrangedSubviews.forEach {
             $0.removeFromSuperview()
         }
-        (0...9).reversed().forEach {
+        data.reversed().forEach {
             let lable = UILabel()
             lable.font = R.Fonts.helvelticaRegular(with: 9)
             lable.textColor = R.Colors.inactive
-            lable.textAlignment = .right
-            lable.text = "\($0 * 10)" //TODO: Remake calculated interval
+            lable.textAlignment = .center
+            //lable.textAlignment = .center
+            lable.text = $0.title.uppercased() //TODO: Remake calculated interval
             
             stackView.addArrangedSubview(lable)
         }
@@ -60,3 +60,5 @@ extension XAxisView {
         backgroundColor = .clear
     }
 }
+
+

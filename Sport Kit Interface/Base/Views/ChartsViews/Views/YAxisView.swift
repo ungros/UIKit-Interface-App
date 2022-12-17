@@ -1,5 +1,5 @@
 //
-//  YAxisView.swift
+//  XAxisView.swift
 //  Sport Kit Interface
 //
 //  Created by Roman on 16.12.2022.
@@ -11,7 +11,8 @@ final  class YAxisView: BaseView {
     
     private let stackView: UIStackView = {
         let view = UIStackView()
-        view.distribution = .fillEqually
+        view.axis = .vertical
+        view.distribution = .equalSpacing
         return view
     }()
     
@@ -19,12 +20,12 @@ final  class YAxisView: BaseView {
         stackView.arrangedSubviews.forEach {
             $0.removeFromSuperview()
         }
-        data.reversed().forEach {
+        (0...9).reversed().forEach {
             let lable = UILabel()
             lable.font = R.Fonts.helvelticaRegular(with: 9)
             lable.textColor = R.Colors.inactive
-            //lable.textAlignment = .center
-            lable.text = $0.title.uppercased() //TODO: Remake calculated interval
+            lable.textAlignment = .right
+            lable.text = "\($0 * 10)" //TODO: Remake calculated interval
             
             stackView.addArrangedSubview(lable)
         }
@@ -59,5 +60,3 @@ extension YAxisView {
         backgroundColor = .clear
     }
 }
-
-

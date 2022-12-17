@@ -19,6 +19,8 @@ final class BaseChartsView: BaseView {
     private let yAxisView = YAxisView()
     private let xAxisView = XAxisView()
     
+    private let chartView = UIView() //BaseChartsView()
+    
     func configureX(with data: [BaseChartsView.Data]) {
         yAxisView.configure(with: data)
         xAxisView.configure(with: data)
@@ -32,8 +34,10 @@ extension BaseChartsView {
     override func setupViews() {
         super.setupViews()
         
-        setupView(BaseChartsView)
+        setupView(yAxisView)
         setupView(xAxisView)
+        
+        setupView(chartView)
             
     }
     
@@ -42,11 +46,18 @@ extension BaseChartsView {
         
         NSLayoutConstraint.activate([
             
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            stackView.topAnchor.constraint(equalTo: topAnchor),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            yAxisView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            yAxisView.topAnchor.constraint(equalTo: topAnchor),
+            yAxisView.bottomAnchor.constraint(equalTo: xAxisView.topAnchor, constant: -15),
             
+            xAxisView.leadingAnchor.constraint(equalTo: yAxisView.trailingAnchor, constant: 12),
+            xAxisView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            xAxisView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            
+            chartView.topAnchor.constraint(equalTo: topAnchor),
+            chartView.bottomAnchor.constraint(equalTo: xAxisView.topAnchor, constant: -12),
+            chartView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            chartView.leadingAnchor.constraint(equalTo: yAxisView.trailingAnchor, constant: 12)
         ])
     }
     
@@ -54,5 +65,6 @@ extension BaseChartsView {
         super.configureAppearance()
         
         backgroundColor = .clear
+        chartView.backgroundColor = .cyan
     }
 }
