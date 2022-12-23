@@ -7,7 +7,7 @@
 
 import UIKit
 
-final  class YAxisView: BaseView {
+final class YAxisView: BaseView {
     
     private let stackView: UIStackView = {
         let view = UIStackView()

@@ -19,7 +19,7 @@ final class BaseChartsView: BaseView {
     private let yAxisView = YAxisView()
     private let xAxisView = XAxisView()
     
-    private let chartView = UIView() //BaseChartsView()
+    private let chartView = ChartView() //BaseChartsView()
     
     func configureX(with data: [BaseChartsView.Data]) {
         yAxisView.configure(with: data)
@@ -65,6 +65,5 @@ extension BaseChartsView {
         super.configureAppearance()
         
         backgroundColor = .clear
-        chartView.backgroundColor = .cyan
     }
 }
