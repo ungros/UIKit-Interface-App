@@ -24,6 +24,7 @@ final class BaseChartsView: BaseView {
     func configureX(with data: [BaseChartsView.Data]) {
         yAxisView.configure(with: data)
         xAxisView.configure(with: data)
+        chartView.configure(with: data)
         }
     }
 

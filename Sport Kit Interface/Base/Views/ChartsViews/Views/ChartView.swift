@@ -23,6 +23,8 @@ final class ChartView: BaseView {
     
     func configure(with data: [BaseChartsView.Data]) {
         
+        layoutIfNeeded()
+        addDashLine(at: 100)
         }
     }
 
@@ -39,13 +41,12 @@ extension ChartView {
         super.constaintViews()
         
         NSLayoutConstraint.activate([
-            
+            yAxisSeparator.leadingAnchor.constraint(equalTo: leadingAnchor),
             yAxisSeparator.topAnchor.constraint(equalTo: topAnchor),
             yAxisSeparator.bottomAnchor.constraint(equalTo: bottomAnchor),
-            yAxisSeparator.leadingAnchor.constraint(equalTo: leadingAnchor),
             yAxisSeparator.widthAnchor.constraint(equalToConstant: 1),
             
-            xAxisSeparator.topAnchor.constraint(equalTo: topAnchor),
+            xAxisSeparator.leadingAnchor.constraint(equalTo: leadingAnchor),
             xAxisSeparator.trailingAnchor.constraint(equalTo: trailingAnchor),
             xAxisSeparator.bottomAnchor.constraint(equalTo: bottomAnchor),
             xAxisSeparator.heightAnchor.constraint(equalToConstant: 1),
@@ -58,3 +59,22 @@ extension ChartView {
         backgroundColor = .clear
     }
 }
+
+private extension ChartView {
+    func addDashLine(at yPosition: CGFloat) {
+        let startPoint = CGPoint(x: 0, y: yPosition)
+        let endPoint = CGPoint(x: bounds.width, y: yPosition)
+        
+        let dashPath = CGMutablePath()
+        dashPath.addLines(between: [startPoint, endPoint])
+        
+        let dashLine = CAShapeLayer()
+        dashLine.path = dashPath
+        dashLine.strokeColor = R.Colors.separator.cgColor
+        dashLine.lineWidth = 1
+        dashLine.lineDashPattern = [6, 3]
+        
+        layer.addSublayer(dashLine)
+    }
+}
+ 
