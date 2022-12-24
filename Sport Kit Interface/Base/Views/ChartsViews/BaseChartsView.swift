@@ -28,9 +28,6 @@ final class BaseChartsView: BaseView {
         }
     }
 
-
-
-
 extension BaseChartsView {
     override func setupViews() {
         super.setupViews()
@@ -51,14 +48,14 @@ extension BaseChartsView {
             yAxisView.topAnchor.constraint(equalTo: topAnchor),
             yAxisView.bottomAnchor.constraint(equalTo: xAxisView.topAnchor, constant: -15),
             
-            xAxisView.leadingAnchor.constraint(equalTo: yAxisView.trailingAnchor, constant: 12),
+            xAxisView.leadingAnchor.constraint(equalTo: yAxisView.trailingAnchor, constant: 8),
             xAxisView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            xAxisView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            xAxisView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 4),
             
-            chartView.topAnchor.constraint(equalTo: topAnchor),
-            chartView.bottomAnchor.constraint(equalTo: xAxisView.topAnchor, constant: -12),
-            chartView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            chartView.leadingAnchor.constraint(equalTo: yAxisView.trailingAnchor, constant: 12)
+            chartView.topAnchor.constraint(equalTo: topAnchor, constant: 4),
+            chartView.bottomAnchor.constraint(equalTo: xAxisView.topAnchor, constant: -16),
+            chartView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -4),
+            chartView.leadingAnchor.constraint(equalTo: yAxisView.trailingAnchor, constant: 16)
         ])
     }
     

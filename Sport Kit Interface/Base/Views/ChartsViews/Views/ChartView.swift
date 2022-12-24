@@ -10,13 +10,13 @@ import UIKit
 final class ChartView: BaseView {
     
     private let yAxisSeparator: UIView = {
-       let view = UIView()
+        let view = UIView()
         view.backgroundColor = R.Colors.separator
         return view
     }()
     
     private let xAxisSeparator: UIView = {
-       let view = UIView()
+        let view = UIView()
         view.backgroundColor = R.Colors.separator
         return view
     }()
@@ -24,9 +24,9 @@ final class ChartView: BaseView {
     func configure(with data: [BaseChartsView.Data]) {
         
         layoutIfNeeded()
-        addDashLine(at: 100)
-        }
+        addDashLines()
     }
+}
 
 extension ChartView {
     
@@ -34,6 +34,7 @@ extension ChartView {
         super.setupViews()
         
         setupView(yAxisSeparator)
+        setupView(xAxisSeparator)
         
     }
     
@@ -61,6 +62,14 @@ extension ChartView {
 }
 
 private extension ChartView {
+    
+    func addDashLines(with counts: Int? = nil) {
+        
+        (0..<9).map {CGFloat($0)}.forEach {
+            addDashLine(at: bounds.height / 9 * $0)
+        }
+    }
+    
     func addDashLine(at yPosition: CGFloat) {
         let startPoint = CGPoint(x: 0, y: yPosition)
         let endPoint = CGPoint(x: bounds.width, y: yPosition)
