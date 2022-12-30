@@ -11,8 +11,8 @@ final class MonthlyPerformanceView: BaseInfoView {
     
     private let chartsView = BaseChartsView()
     
-    func configure(with items: [BaseChartsView.Data]) {
-        chartsView.configureX(with: items)
+    func configure(with items: [BaseChartsView.Data], topChartOffset: Int) {
+        chartsView.configureX(with: items, topChartOffset: topChartOffset)
     }
 }
 

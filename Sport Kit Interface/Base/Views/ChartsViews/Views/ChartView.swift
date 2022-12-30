@@ -21,11 +21,11 @@ final class ChartView: BaseView {
         return view
     }()
     
-    func configure(with data: [BaseChartsView.Data]) {
+    func configure(with data: [BaseChartsView.Data], topChartOffset: Int = 10) {
         
         layoutIfNeeded()
         drawDashLines()
-        drawChart(with: data)
+        drawChart(with: data, topChartOffset: topChartOffset)
     }
 }
 
@@ -64,10 +64,10 @@ extension ChartView {
 
 private extension ChartView {
     
-    func drawDashLines(with counts: Int? = nil) {
+    func drawDashLines(with counts: Int = 9) {
         
-        (0..<9).map {CGFloat($0)}.forEach {
-            addDashLine(at: bounds.height / 9 * $0)
+        (0..<counts).map {CGFloat($0)}.forEach {
+            addDashLine(at: bounds.height / CGFloat(counts) * $0)
         }
     }
     
@@ -87,7 +87,7 @@ private extension ChartView {
         layer.addSublayer(dashLine)
     }
     
-    func drawChart(with data: [BaseChartsView.Data]) {
+    func drawChart(with data: [BaseChartsView.Data], topChartOffset: Int) {
         guard let maxValue = data.sorted(by: {$0.value > $1.value}).first?.value else  {return}
         let valuePoints = data.enumerated().map {CGPoint(x: CGFloat($0), y: CGFloat($1.value))}
         let chartHeight = bounds.height / CGFloat(maxValue + 10)
@@ -100,9 +100,10 @@ private extension ChartView {
         
         let chartPath = UIBezierPath()
         chartPath.move(to: points[0])
-        
+    
         points.forEach {
             chartPath.addLine(to: $0)
+            drawChartDot(at: $0)
         }
         
         let chartLayer = CAShapeLayer()
@@ -115,7 +116,20 @@ private extension ChartView {
         chartLayer.lineJoin = .round
         
         layer.addSublayer(chartLayer)
+    }
+    
+    func drawChartDot(at point: CGPoint) {
+        let dotPath = UIBezierPath()
+        dotPath.move(to: point)
+        dotPath.addLine(to: point)
         
+        let dotLayer = CAShapeLayer()
+        dotLayer.path = dotPath.cgPath
+        dotLayer.strokeColor = R.Colors.active.cgColor
+        dotLayer.lineCap = .round
+        dotLayer.lineWidth = 10
+        
+        layer.addSublayer(dotLayer)
     }
 }
 

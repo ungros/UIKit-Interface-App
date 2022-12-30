@@ -21,10 +21,10 @@ final class BaseChartsView: BaseView {
     
     private let chartView = ChartView() //BaseChartsView()
     
-    func configureX(with data: [BaseChartsView.Data]) {
+    func configureX(with data: [BaseChartsView.Data], topChartOffset: Int = 10) {
         yAxisView.configure(with: data)
         xAxisView.configure(with: data)
-        chartView.configure(with: data)
+        chartView.configure(with: data, topChartOffset: topChartOffset)
         }
     }
 
