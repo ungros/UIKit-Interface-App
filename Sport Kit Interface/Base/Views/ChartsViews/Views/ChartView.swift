@@ -25,6 +25,7 @@ final class ChartView: BaseView {
         
         layoutIfNeeded()
         drawDashLines()
+        drawChart(with: data)
     }
 }
 
@@ -101,12 +102,20 @@ private extension ChartView {
         chartPath.move(to: points[0])
         
         points.forEach {
-            chartPath.addLine(to: points[$0])
+            chartPath.addLine(to: $0)
         }
         
         let chartLayer = CAShapeLayer()
-        chartLayer.path = chartPath
-       // chartLayer.fillColor
+        chartLayer.path = chartPath.cgPath
+        // chartLayer.fillColor
+        chartLayer.strokeColor = R.Colors.active.cgColor
+        chartLayer.lineWidth = 3
+        chartLayer.strokeEnd = 1
+        chartLayer.lineCap = .round
+        chartLayer.lineJoin = .round
+        
+        layer.addSublayer(chartLayer)
+        
     }
 }
- 
+
