@@ -107,7 +107,7 @@ private extension ChartView {
         
         let chartLayer = CAShapeLayer()
         chartLayer.path = chartPath.cgPath
-        // chartLayer.fillColor
+        chartLayer.fillColor = UIColor.clear.cgColor
         chartLayer.strokeColor = R.Colors.active.cgColor
         chartLayer.lineWidth = 3
         chartLayer.strokeEnd = 1
