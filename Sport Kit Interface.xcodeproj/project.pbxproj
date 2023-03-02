@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3002958C29B0DB0C00DCD984 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3002958B29B0DB0C00DCD984 /* SectionHeaderView.swift */; };
 		30031EF92949EAB70061796E /* MonthlyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30031EF82949EAB70061796E /* MonthlyPerformanceView.swift */; };
 		30031EFC294CF3320061796E /* BaseChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30031EFB294CF3320061796E /* BaseChartsView.swift */; };
 		30031EFE294D07A90061796E /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30031EFD294D07A90061796E /* XAxisView.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3002958B29B0DB0C00DCD984 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		30031EF82949EAB70061796E /* MonthlyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyPerformanceView.swift; sourceTree = "<group>"; };
 		30031EFB294CF3320061796E /* BaseChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseChartsView.swift; sourceTree = "<group>"; };
 		30031EFD294D07A90061796E /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3002958929B0DAD200DCD984 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3002958A29B0DAEE00DCD984 /* Views */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		3002958A29B0DAEE00DCD984 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3002958B29B0DB0C00DCD984 /* SectionHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		30031EF72949EA8D0061796E /* MonthlyPerformanceView */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +161,7 @@
 		304B926C2883F299003A542D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3002958929B0DAD200DCD984 /* CollectionView */,
 				301275002888107200AF2521 /* WeekView */,
 				304B926F2885762D003A542D /* OverviewNavBar.swift */,
 			);
@@ -443,6 +462,7 @@
 				304B927228857673003A542D /* BaseView.swift in Sources */,
 				30B956F228881948002A4088 /* WeekDayView.swift in Sources */,
 				3021B64F292BA1E000B54DC5 /* BaseBarView.swift in Sources */,
+				3002958C29B0DB0C00DCD984 /* SectionHeaderView.swift in Sources */,
 				307C93592882AFD50066DAF1 /* UIView.swift in Sources */,
 				30A53BF0290F10BF00714A1A /* StepsView.swift in Sources */,
 				30031F03295616D70061796E /* ChartView.swift in Sources */,
