@@ -19,8 +19,26 @@ final class SectionHeaderView: UICollectionReusableView {
         return lable
     }()
     
+    
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        setupViews()
+        constaintViews()
+        configureAppeatance()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(frame: .zero)
+        
+        setupViews()
+        constaintViews()
+        configureAppeatance()
+    }
+    
     func configure(with title: String) {
-        self.title.text = title
+        self.title.text = title.uppercased()
     }
     
 }
@@ -32,6 +50,7 @@ private extension SectionHeaderView {
      func setupViews() {
         
         setupView(title)
+        
        
     }
      func constaintViews() {

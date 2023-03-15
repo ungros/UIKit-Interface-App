@@ -31,6 +31,7 @@ extension OverviewController {
         
         
         view.setupView(navBar)
+        view.setupView(header)
     }
     
     override func constaintViews() {
@@ -42,9 +43,10 @@ extension OverviewController {
             navBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             
             header.topAnchor.constraint(equalTo: navBar.bottomAnchor),
-            header.topAnchor.constraint(equalTo: <#T##NSLayoutAnchor<NSLayoutYAxisAnchor>#>)
-            
-            
+            header.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            header.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            header.heightAnchor.constraint(equalToConstant: 32)
+               
             
         ])
     }
@@ -56,6 +58,10 @@ extension OverviewController {
         
         //navBar.translatesAutoresizingMaskIntoConstraints = false
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMMM dd"
+        
+        header.configure(with: dateFormatter.string(from: Date()))
         
         
     }
