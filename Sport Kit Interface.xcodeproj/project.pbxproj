@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3002958C29B0DB0C00DCD984 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3002958B29B0DB0C00DCD984 /* SectionHeaderView.swift */; };
+		3002958E29C7653900DCD984 /* TrainingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3002958D29C7653800DCD984 /* TrainingCellView.swift */; };
 		30031EF92949EAB70061796E /* MonthlyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30031EF82949EAB70061796E /* MonthlyPerformanceView.swift */; };
 		30031EFC294CF3320061796E /* BaseChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30031EFB294CF3320061796E /* BaseChartsView.swift */; };
 		30031EFE294D07A90061796E /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30031EFD294D07A90061796E /* XAxisView.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		3002958B29B0DB0C00DCD984 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		3002958D29C7653800DCD984 /* TrainingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCellView.swift; sourceTree = "<group>"; };
 		30031EF82949EAB70061796E /* MonthlyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyPerformanceView.swift; sourceTree = "<group>"; };
 		30031EFB294CF3320061796E /* BaseChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseChartsView.swift; sourceTree = "<group>"; };
 		30031EFD294D07A90061796E /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				3002958929B0DAD200DCD984 /* CollectionView */,
 				301275002888107200AF2521 /* WeekView */,
 				304B926F2885762D003A542D /* OverviewNavBar.swift */,
+				3002958D29C7653800DCD984 /* TrainingCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				3021B64F292BA1E000B54DC5 /* BaseBarView.swift in Sources */,
 				3002958C29B0DB0C00DCD984 /* SectionHeaderView.swift in Sources */,
 				307C93592882AFD50066DAF1 /* UIView.swift in Sources */,
+				3002958E29C7653900DCD984 /* TrainingCellView.swift in Sources */,
 				30A53BF0290F10BF00714A1A /* StepsView.swift in Sources */,
 				30031F03295616D70061796E /* ChartView.swift in Sources */,
 				30A53BEE290F10B000714A1A /* StatsView.swift in Sources */,

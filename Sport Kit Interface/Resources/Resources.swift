@@ -92,10 +92,17 @@ enum R {
             }
         }
         
+        enum Overview {
+            static let checkmarkNotDone = UIImage(named: "checkmark_not_done")
+            static let checkmarkDone = UIImage(named: "checkmark_done")
+            static let rightArrow = UIImage(named: "right_arrow")
+        }
+        
         enum Common {
             static let downArrow = UIImage(named: "all_workouts")
             static let add = UIImage(named: "add_icon")
         }
+        
     }
     
     enum Fonts {
